@@ -14,5 +14,27 @@ namespace TheEvolutionOfRevolution
 {
     class GameOver : Scene
     {
+        Background background;
+
+        public GameOver() { }
+
+        public override void LoadContent(ContentManager content)
+        {
+            base.LoadContent(content);
+            this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//bg_gameover"));
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+            base.Update(gameTime);
+        }
+
+        public override void Draw(SpriteBatch spritebatch)
+        {
+            if (background != null)
+                background.Draw(spritebatch);
+
+            base.Draw(spritebatch);
+        }
     }
 }

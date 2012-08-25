@@ -53,22 +53,23 @@ namespace TheEvolutionOfRevolution
                 case 0:
                     {
                         SceneManager.scene = new Opening();
+                        scene.LoadContent(content);
                         actualScene = SCENE.OPENING;
                     }
                     break;
                 case 1:
                     {
                         SceneManager.scene = new GameLevel();
+                        scene.LoadContent(content);
                         actualScene = SCENE.LEVEL_01;
                     }
                     break;
                 case 2:
                     {
                         SceneManager.scene = new GameOver();
+                        scene.LoadContent(content);
                         actualScene = SCENE.GAMEOVER;
                     }
-                    break;
-                default:
                     break;
             }
         }
