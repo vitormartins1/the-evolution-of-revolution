@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
 using Foxpaw.Game;
+using TheEvolutionOfRevolution;
 
 namespace Foxpaw.Game
 {
@@ -15,24 +16,25 @@ namespace Foxpaw.Game
         public Core(ContentManager content, GraphicsDevice graphicsDevice, GameWindow window) : base(window)
         {
             this.content = content;
-
+            
             Initialiaze();
         }
 
         public void Initialiaze()
         {
-
+            SceneManager.Setup();
+            SceneManager.LoadContent(content);
         }
 
         public void Update(GameTime gameTime) 
         {
-
+            SceneManager.Update(gameTime);
             base.Verify(gameTime);
         }
 
         public void Draw() 
         {
-
+            SceneManager.Draw();
             base.Show();
         }
     }
