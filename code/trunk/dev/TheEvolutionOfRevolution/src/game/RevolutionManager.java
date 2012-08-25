@@ -11,11 +11,13 @@ public class RevolutionManager
 	
 	public RevolutionManager()
 	{
-		initialRevolutionaries = 1;
+		initialRevolutionaries = 5;
+		
+		revolutionaries = new LinkedList<Revolutionary>();
 		
 		for (int i = 0; i < initialRevolutionaries; i++)
         {
-            revolutionaries.add(new Revolutionary(new Point(700,10), new Point(10, 50), "/images/cat_1.png" ));
+            revolutionaries.add(new Revolutionary(new Point(700,520), new Point(50, 60), "/images/megaman.gif" ));
         }
 	}
 	
