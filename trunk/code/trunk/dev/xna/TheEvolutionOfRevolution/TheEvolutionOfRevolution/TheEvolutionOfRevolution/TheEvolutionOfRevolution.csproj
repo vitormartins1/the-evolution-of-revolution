@@ -115,6 +115,7 @@
     <Compile Include="Classes\Background.cs" />
     <Compile Include="Classes\Character.cs" />
     <Compile Include="Classes\CharacterManager.cs" />
+    <Compile Include="Classes\Enemies\TestEnemy.cs" />
     <Compile Include="Classes\EnemyTest.cs" />
     <Compile Include="Classes\GameLevel.cs" />
     <Compile Include="Classes\GameOver.cs" />
