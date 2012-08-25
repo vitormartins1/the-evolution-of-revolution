@@ -14,5 +14,28 @@ namespace TheEvolutionOfRevolution
 {
     class GameLevel : Scene
     {
+ //Background background;
+
+        public GameLevel() { }
+
+        public override void LoadContent(ContentManager content)
+        {
+            base.LoadContent(content);
+            //this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("images/background_opening"));
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+
+            base.Update(gameTime);
+        }
+
+        public override void Draw(SpriteBatch spritebatch)
+        {
+            //if (background != null)
+            //    background.Draw(spritebatch);
+
+            base.Draw(spritebatch);
+        }
     }
 }
