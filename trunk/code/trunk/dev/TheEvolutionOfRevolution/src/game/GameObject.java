@@ -24,9 +24,9 @@ abstract class GameObject extends Applet
 		image = tk.getImage(getClass().getResource(filename));
 	}
 
-	public void update() { }
+	public void Update() { }
 
-	public void draw(Graphics graphics)
+	public void Draw(Graphics graphics)
 	{
 		graphics.drawImage(image, position.x, position.y, dimension.x, dimension.y, null);
 	}

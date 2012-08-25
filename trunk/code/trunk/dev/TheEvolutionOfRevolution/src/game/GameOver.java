@@ -20,6 +20,6 @@ public class GameOver extends Scene
 	@Override
 	public void Draw(Graphics2D graphics)
 	{
-		background.draw(graphics);
+		background.Draw(graphics);
 	}
 }
