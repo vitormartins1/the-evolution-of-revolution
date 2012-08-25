@@ -20,16 +20,16 @@ namespace TheEvolutionOfRevolution
         public Texture2D image;
         protected Point size { get; private set; }
 
-        public StaticGameObject(Vector2 position, Texture2D image)
+        public StaticGameObject(Vector2 position, Texture2D image, Point size)
         {
             this.image = image;
             this.position = position;
-            this.size = new Point(image.Width, image.Height);
+            this.size = size;
         }
         
         public virtual void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(this.image, new Rectangle((int)position.X, (int)position.Y, (int)size.X, (int)size.Y), Color.White);
+            spriteBatch.Draw(this.image, new Rectangle((int)position.X, (int)position.Y, size.X, size.Y), Color.White);
         }
 
         private void SetupRigidbody(bool isKinematic)

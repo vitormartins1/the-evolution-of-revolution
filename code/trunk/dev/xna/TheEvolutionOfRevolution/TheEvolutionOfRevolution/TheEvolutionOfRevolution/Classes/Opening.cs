@@ -23,7 +23,7 @@ namespace TheEvolutionOfRevolution
         public override void LoadContent(ContentManager content)
         {
             base.LoadContent(content);
-            this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//bg_opening"));
+            this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//bg_opening"), new Point(800,600));
         }
 
         public override void Update(GameTime gameTime)

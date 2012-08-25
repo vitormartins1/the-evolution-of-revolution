@@ -23,9 +23,9 @@ namespace TheEvolutionOfRevolution
             : base(position, facing, state)
         {
             if (ID == 0)
-                base.position = Vector2.Zero;
+                base.position = new Vector2(0, 500);
             else
-                base.position = new Vector2(600, 0);
+                base.position = new Vector2(600, 500);
         }
 
         public virtual void Update()

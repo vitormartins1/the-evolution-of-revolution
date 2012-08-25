@@ -8,3 +8,4 @@ C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\The
 C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_game.xnb
 C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_gameover.xnb
 C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_opening.xnb
+C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bastilha.xnb
