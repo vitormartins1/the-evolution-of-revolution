@@ -5,13 +5,10 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 #endregion
 
-using Foxpaw.Game.Xml.Database;
-
 namespace Foxpaw.Game2D.Particle
 {
     static class ParticleEmitter
     {
-        static XmlDatabase database = new XmlDatabase("PATH");
         static List<Particle> particleList = new List<Particle>();
         static Particle[] recentParticles = new Particle[10]; // Últimas partículas usadas. Evita releitura de XML.
 
