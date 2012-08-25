@@ -4,6 +4,8 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 import java.util.LinkedList;
 
+import Opponents.Hitler;
+
 public class CounterforceManager
 {
 	public LinkedList<Opponent> opponents;
