@@ -18,9 +18,23 @@ public class SceneManager
 		currentScene = SCENE.OPENING;
 	}
 	
-	public static void ChangeScene(int scene)
+	public static void ChangeScene(int indexScene)
 	{
-		
+		switch (indexScene)
+		{
+		case 0:
+			scene = new Opening();
+			currentScene = SCENE.OPENING;
+			break;
+		case 1:
+			scene = new GameLevel();
+			currentScene = SCENE.GAME;
+			break;
+		case 2:
+			scene = new GameOver();
+			currentScene = SCENE.GAMEOVER;
+			break;
+		}
 	}
 	
 	public static void Update()
