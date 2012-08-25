@@ -1,26 +1,25 @@
 package game;
 
+import java.awt.Canvas;
 import java.awt.Graphics2D;
 import java.awt.Point;
 
 public class Core 
 {
-	Player player;
-	
 	public Core()
-	{	
-		player = new Player(new Point(300, 400), new Point(100, 125), "/images/cat_1.png" );
+	{
+		SceneManager.Setup();
 	}
 
 	public void update()
 	{
-        player.update();
+        
+        SceneManager.scene.Update();
     }
 
 	public void draw(Graphics2D graphics)
 	{
 		graphics.clearRect(0, 0, 800, 600);
-		
-		player.draw(graphics);
+		SceneManager.scene.Draw(graphics);
 	}
 }

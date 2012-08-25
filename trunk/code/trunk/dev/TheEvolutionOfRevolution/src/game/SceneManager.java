@@ -28,9 +28,9 @@ public class SceneManager
 		scene.Update();
 	}
 	
-	public static void Draw(Graphics2D g2d)
+	public static void Draw(Graphics2D graphics)
 	{
-		scene.Draw(g2d);
+		scene.Draw(graphics);
 	}
 	
 	enum SCENE
