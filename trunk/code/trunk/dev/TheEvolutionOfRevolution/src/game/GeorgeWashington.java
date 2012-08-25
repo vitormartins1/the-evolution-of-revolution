@@ -13,7 +13,8 @@ public class GeorgeWashington extends Revolutionary
 	@Override
 	public void Update()
 	{
-		position.x -= 2;
+		if (!fighting)
+			position.x -= 2;
 	}
 	
 	private static final long serialVersionUID = 1L;
