@@ -10,7 +10,6 @@ using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Graphics;
 #endregion
-using Foxpaw.Game.Xml.GenericPackage;
 
 namespace Foxpaw.Game2D.Graphics
 {
@@ -48,12 +47,12 @@ namespace Foxpaw.Game2D.Graphics
         /// <summary>Colocar uma nova textura e novos loops./// </summary>
         /// <param name="loops">Tamanho string[2]; Armazena inicio e término dos loops.</param>
         /// <param name="frameCount">Coluna e linha da matriz de frames.</param>
-        protected void ChangeTexture(Texture2D texture, ref Package package)
+        protected void ChangeTexture(Texture2D texture, Point frameCount, List<Point> loopList)
         {
             this.texture = texture;
 
-            this.frameCount = package.PointValue;
-            this.loopList = package.PointList;
+            this.frameCount = frameCount;
+            this.loopList = loopList;
 
             //Calcula o tamanho do frame.
             frame = new Rectangle(0, 0, texture.Width / frameCount.X, texture.Height / frameCount.Y);

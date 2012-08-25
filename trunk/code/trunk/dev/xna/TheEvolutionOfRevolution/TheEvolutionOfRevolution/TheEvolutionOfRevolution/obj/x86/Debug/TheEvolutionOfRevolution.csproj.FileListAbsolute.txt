@@ -1,0 +1,6 @@
+C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\TheEvolutionOfRevolution.exe
+C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\TheEvolutionOfRevolution.pdb
+C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\obj\x86\Debug\TheEvolutionOfRevolution.exe
+C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\obj\x86\Debug\TheEvolutionOfRevolution.pdb

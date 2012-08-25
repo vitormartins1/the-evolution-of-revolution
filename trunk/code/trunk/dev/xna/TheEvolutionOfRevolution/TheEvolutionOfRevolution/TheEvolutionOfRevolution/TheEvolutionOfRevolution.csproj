@@ -107,6 +107,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\2D\Animation2D.cs" />
+    <Compile Include="Classes\2D\GameObject2D.cs" />
+    <Compile Include="Classes\2D\Particle2D.cs" />
+    <Compile Include="Classes\2D\Rigidbody.cs" />
+    <Compile Include="Classes\Generic\Animate3DPackage.cs" />
+    <Compile Include="Classes\Generic\Core.cs" />
+    <Compile Include="Classes\Generic\FrameRateDisplayer.cs" />
+    <Compile Include="Classes\Generic\Game1.cs" />
+    <Compile Include="Classes\Generic\GenericAnimationPackage.cs" />
+    <Compile Include="Classes\Generic\GenericPackage.cs" />
+    <Compile Include="Classes\Generic\GenericParticlePackage.cs" />
+    <Compile Include="Classes\Generic\Package.cs" />
+    <Compile Include="Classes\Generic\ParticleEmitter.cs" />
+    <Compile Include="Classes\Generic\XmlDatabase.cs" />
+    <Compile Include="GenericCharacter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />

@@ -21,12 +21,12 @@ namespace Foxpaw.Game2D
         public Vector2 position;
         protected Point size { get; private set; }
 
-        public GameObject(Vector2 position, Texture2D texture, Package package) : this(position, texture, Facing.North, State.Stand, package) { }
-        public GameObject (Vector2 position, Texture2D texture, Facing direction, State state, Package package): base(direction, state)
+        public GameObject (Vector2 position, Texture2D texture, Facing direction, State state, Point frameCount, List<Point> loopList)
+            : base(direction, state)
         {
             this.position = position;
             this.size = new Point(texture.Width, texture.Height);
-            base.ChangeTexture(texture, ref package);
+            base.ChangeTexture(texture, frameCount, loopList);
         }
 
         public override void Update()
