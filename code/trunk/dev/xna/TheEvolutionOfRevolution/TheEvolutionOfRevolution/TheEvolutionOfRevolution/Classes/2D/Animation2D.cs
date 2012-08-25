@@ -17,8 +17,8 @@ namespace Foxpaw.Game2D.Graphics
     {
         #region Variáveis
         // Valores a serem multiplicados.
-        public enum Facing { North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest } // Y.
-        public enum State { Stand, Sit, Dead, Pick, Walk, Fight, Hurt, Hit } // X. Também guarda o index a ser pego na lista de pontos.
+        public enum Facing { South, West, North, East }// Y.
+        public enum State { Iddle, Walking } // X. Também guarda o index a ser pego na lista de pontos.
 
         protected Color color; // Cor de filtro.
         protected State state, lastState; // Carrega o estado do personagem.

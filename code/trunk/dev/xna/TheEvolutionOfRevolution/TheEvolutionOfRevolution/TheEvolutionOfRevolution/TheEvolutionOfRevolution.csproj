@@ -116,7 +116,6 @@
     <Compile Include="Classes\Generic\Animate3DPackage.cs" />
     <Compile Include="Classes\Generic\Core.cs" />
     <Compile Include="Classes\Generic\FrameRateDisplayer.cs" />
-    <Compile Include="Classes\Generic\Game1.cs" />
     <Compile Include="Classes\Generic\GenericAnimationPackage.cs" />
     <Compile Include="Classes\Generic\GenericPackage.cs" />
     <Compile Include="Classes\Generic\GenericParticlePackage.cs" />

@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 #endregion
+
 using Foxpaw.Game2D.Graphics;
 using Foxpaw.Game.Xml.GenericPackage;
 
@@ -21,10 +22,14 @@ namespace Foxpaw.Game2D
         public Vector2 position;
         protected Point size { get; private set; }
 
-        public GameObject (Vector2 position, Texture2D texture, Facing direction, State state, Point frameCount, List<Point> loopList)
+        public GameObject (Vector2 position, Facing direction, State state)
             : base(direction, state)
         {
             this.position = position;
+        }
+
+        public void Initialize(Texture2D texture, Point frameCount, List<Point> loopList)
+        {
             this.size = new Point(texture.Width, texture.Height);
             base.ChangeTexture(texture, frameCount, loopList);
         }
