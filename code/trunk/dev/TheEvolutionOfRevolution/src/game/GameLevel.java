@@ -24,18 +24,6 @@ public class GameLevel extends Scene
 		player.Update();
 		revolution.Update();
 		counterforce.Update();
-		
-		for (int i = 0; i < revolution.revolutionaries.size(); i++)
-        {
-			for (int j = 0; j < counterforce.opponents.size(); j++)
-	        {
-				if (Collision.CheckCollision(revolution.revolutionaries.get(i), counterforce.opponents.get(j)))
-				{
-					revolution.revolutionaries.get(i).fighting = true;
-					counterforce.opponents.get(j).fighting = true;
-				}
-	        }
-        }
 	}
 
 	@Override
