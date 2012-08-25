@@ -15,8 +15,8 @@ namespace TheEvolutionOfRevolution
 {
     class Background : StaticGameObject
     {
-        public Background(Vector2 position, Texture2D image)
-            : base(position, image)
+        public Background(Vector2 position, Texture2D image, Point size)
+            : base(position, image, size)
         {
         }
     }
