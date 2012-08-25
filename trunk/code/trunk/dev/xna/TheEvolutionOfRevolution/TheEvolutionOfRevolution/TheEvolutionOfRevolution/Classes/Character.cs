@@ -16,7 +16,6 @@ namespace TheEvolutionOfRevolution
         public bool attacking;
 
         private Character attackedEnemy;
-        public Character attacker;
 
         protected Character(int ID, Type type, Vector2 position, Facing facing, State state)
             : base(position, facing, state)
@@ -27,12 +26,15 @@ namespace TheEvolutionOfRevolution
                 base.position = new Vector2(600, 500);
         }
 
-        public virtual void Update()
+        public override void Update()
         {
+            if (this.position.X < 0 || this.position.X > 800) { this.hp = 0; }
+
             if (attackedEnemy != null)
             {
-                // state = State.Attacking;
                 attackedEnemy.hp -= attack;
+                // state = State.Attacking;
+                if(attackedEnemy.hp <= 0){attackedEnemy=null;}
             }
             else { attacking = false; }
 
@@ -52,11 +54,7 @@ namespace TheEvolutionOfRevolution
             {
                 attacking = true;
                 attackedEnemy = enemy;
-                enemy.attacker = this;
-                return;
             }
-
-            // attackedEnemy = null;
         }
 
         public enum Type

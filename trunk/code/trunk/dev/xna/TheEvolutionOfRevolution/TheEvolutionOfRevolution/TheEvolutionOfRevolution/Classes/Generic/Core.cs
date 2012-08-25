@@ -24,18 +24,21 @@ namespace Foxpaw.Game
             SceneManager.LoadContent(content);
         }
 
-
+        int i = 0;
         public void Update(GameTime gameTime) 
         {
-            if (Microsoft.Xna.Framework.Input.Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.D))
-            {
-            CharacterManager.AddCharacter(new RevolutionaryTest(content.Load<Texture2D>("Sprite")));
+            i++;
 
-            }
-            if (Microsoft.Xna.Framework.Input.Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.A))
+            if (Microsoft.Xna.Framework.Input.Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Space))
             {
-                CharacterManager.AddCharacter(new TesteEnemy(content.Load<Texture2D>("Sprite")));
+                if (i > 100)
+                {
+                    CharacterManager.AddCharacter(new RevolutionaryTest(content.Load<Texture2D>("Sprite")));
+                    CharacterManager.AddCharacter(new TesteEnemy(content.Load<Texture2D>("Sprite")));
+                    i = 0;
+                }
             }
+
 
 
             CharacterManager.Update();
