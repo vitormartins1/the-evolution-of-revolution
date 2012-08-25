@@ -22,10 +22,13 @@ namespace Foxpaw.Game
         {
             SceneManager.Setup();
             SceneManager.LoadContent(content);
+
+            CharacterManager.AddCharacter(new TesteEnemy(content.Load<Texture2D>("Sprite")));
         }
 
         public void Update(GameTime gameTime) 
         {
+            CharacterManager.Update();
             SceneManager.Update(gameTime);
             base.Verify(gameTime);
         }
@@ -33,6 +36,8 @@ namespace Foxpaw.Game
         public void Draw(SpriteBatch spriteBatch) 
         {
             SceneManager.Draw(spriteBatch);
+            CharacterManager.Draw(spriteBatch);
+
             base.Show();
         }
     }

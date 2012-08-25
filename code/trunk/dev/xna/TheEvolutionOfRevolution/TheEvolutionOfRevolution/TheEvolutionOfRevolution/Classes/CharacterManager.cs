@@ -9,10 +9,9 @@ namespace TheEvolutionOfRevolution
         {
             static List<Character> characterList = new List<Character>();
 
-            public static void AddParticle(Character particle)
+            public static void AddCharacter(Character character)
             {
-
-                characterList.Add(particle);
+                characterList.Add(character);
             }
 
             public static void Update()
@@ -21,13 +20,24 @@ namespace TheEvolutionOfRevolution
                 {
                     Character character = characterList[index];
 
+                    character.Update();
+
+                    foreach (Character c in characterList)
+                    {
+                        if (character.ID != c.ID)
+                        {
+                            character.TryAttack(c);
+                        }
+                    }
+
                     if (character.hp <= 0) { characterList.Remove(character); }
+
                 }
             }
 
             public static void Draw(SpriteBatch spritebatch)
             {
-                foreach (Character particle in characterList) { particle.Draw(spritebatch); }
+                foreach (Character character in characterList) { character.Draw(spritebatch); }
             }
         }
     
