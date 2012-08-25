@@ -17,8 +17,6 @@ namespace TheEvolutionOfRevolution
 
             public static void Update()
             {
-
-                ////////////////
                 for (int index = 0; index < characterList.Count; index++)
                 {
                     Character character = characterList[index];

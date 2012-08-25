@@ -22,14 +22,10 @@ namespace TheEvolutionOfRevolution
 
         static public ContentManager content;
 
-        static string text;
-
         static public void Setup()
         {
-            text = "OPENING";
             SceneManager.scene = new Opening();
             actualScene = SCENE.OPENING;
-
         }
 
         public static void LoadContent(ContentManager content)

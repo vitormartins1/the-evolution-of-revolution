@@ -14,7 +14,7 @@ namespace TheEvolutionOfRevolution
 {
     class Opening : Scene
     {
-        //Background background;
+        Background background;
 
         public Opening() { }
 
@@ -23,7 +23,7 @@ namespace TheEvolutionOfRevolution
         public override void LoadContent(ContentManager content)
         {
             base.LoadContent(content);
-            //this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("images/background_opening"));
+            this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//bg_opening"));
         }
 
         public override void Update(GameTime gameTime)
@@ -40,8 +40,8 @@ namespace TheEvolutionOfRevolution
 
         public override void Draw(SpriteBatch spritebatch)
         {
-            //if (background != null)
-            //    background.Draw(spritebatch);
+            if (background != null)
+                background.Draw(spritebatch);
 
             base.Draw(spritebatch);
         }
