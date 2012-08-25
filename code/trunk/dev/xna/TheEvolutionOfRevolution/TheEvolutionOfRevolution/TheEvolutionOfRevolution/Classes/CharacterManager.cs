@@ -20,8 +20,6 @@ namespace TheEvolutionOfRevolution
                 {
                     Character character = characterList[index];
 
-                    character.Update();
-
                     if (characterList.Count == 1) { character.attacking = false; }
                     else
                     {
@@ -40,6 +38,8 @@ namespace TheEvolutionOfRevolution
                         }
                     }
                     if (character.hp <= 0) { characterList.Remove(character); }
+                    character.Update();
+
                 }
             }
 
