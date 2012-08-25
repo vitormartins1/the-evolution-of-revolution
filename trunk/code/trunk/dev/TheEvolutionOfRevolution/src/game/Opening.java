@@ -17,9 +17,7 @@ public class Opening extends Scene
 	public void Update()
 	{
 		if (Keyboard.getInstance().isKeyPressed(KeyEvent.VK_ENTER))
-		{
-			SceneManager.scene = new GameLevel();
-		}
+			SceneManager.ChangeScene(1);
 	}
 
 	@Override
