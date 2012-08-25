@@ -10,9 +10,8 @@ namespace TheEvolutionOfRevolution
             : base(0,Type.Enemy, Vector2.Zero, Facing.East, State.Walking)
         {
             base.hp = 100;
-            base.attack = 1f;
-            base.range = 5;
-            base.ID = 1;
+            base.attack = 1;
+            base.range = 0;
 
             Point frameCount = new Point(6, 4);
             List<Point> loopList = new List<Point>()
