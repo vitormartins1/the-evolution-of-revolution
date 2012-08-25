@@ -26,9 +26,8 @@ import java.util.LinkedList;
 
         protected Time interval = new Time(200); // Intervalo em milésimos.
 
-        private Point frameCount; // Contagem de frames.
         private LinkedList<Point> loopList; // Guarda os pontos de início e término de cada animação.
-        private Image image; // Guarda a malha de Sprites.
+        private Image image, storedImage; // Guarda a malha de Sprites.
         private Point currentFrame; // Ponto para multiplicação final.
         private Rectangle frame; // Recorte da textura mostrado na tela.
         private Time timer; // Contador de tempo.
@@ -39,18 +38,16 @@ import java.util.LinkedList;
         {
             timer = new Time(0);
             
+            this.currentFrame = new Point();
             this.state = state;
             this.facing = facing;
             this.loopList = new LinkedList<Point>();
         }
-        /// <summary>Colocar uma nova textura e novos loops./// </summary>
-        /// <param name="loops">Tamanho string[2]; Armazena inicio e término dos loops.</param>
-        /// <param name="frameCount">Coluna e linha da matriz de frames.</param>
+        
         protected void ChangeTexture(Image image, Point frameCount, LinkedList<Point> loopList)
         {
-            this.image = image;
+            this.image = this.storedImage = image;
 
-            this.frameCount = frameCount;
             this.loopList = loopList;
 
             //Calcula o tamanho do frame.
@@ -78,14 +75,18 @@ import java.util.LinkedList;
         }
         
         @Override
-        public void Draw(Graphics graphic)
+        public void Draw(Graphics graphics)
         {
             frame.x = currentFrame.x * frame.width;
             frame.y = currentFrame.y * frame.height;
             
-            this.image.getGraphics().clipRect(frame.x, frame.y, frame.width, frame.height);
+            //this.image.getGraphics().clipRect(frame.x, frame.y, frame.width, frame.height);
             
-            super.Draw(graphic);
+            super.image = this.image;
+            
+            //this.image = this.storedImage;
+            
+            super.Draw(graphics);
         }
 
         //Mudar intervalo de frames.
@@ -93,6 +94,7 @@ import java.util.LinkedList;
 
         private void SetPoints()
         {
+        	
         	Point PositionValues = EnumReturner(facing, state);
         	returningPoint = PositionValues.y;
         	

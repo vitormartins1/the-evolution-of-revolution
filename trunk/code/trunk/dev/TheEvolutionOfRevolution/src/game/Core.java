@@ -1,13 +1,14 @@
 package game;
 
-import java.awt.Canvas;
 import java.awt.Graphics2D;
-import java.awt.Point;
 
 public class Core 
 {
+	TesteDeAnimacao test;
+	
 	public Core()
 	{
+		test=new TesteDeAnimacao();
 		SceneManager.Setup();
 	}
 
