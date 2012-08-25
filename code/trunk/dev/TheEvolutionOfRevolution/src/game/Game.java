@@ -7,15 +7,13 @@ import java.util.*;
 
 public class Game extends Applet implements Runnable
 {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
+	
 	public static final int screenWidth  = 800;
 	public static final int screenHeigth = 600;
 	
-	BufferedImage backbuffer;
-	Graphics2D g2d;
+	BufferedImage bufferedImage;
+	Graphics2D graphics2D;
 
 	Thread gameLoop;
 	Random rand = new Random();
@@ -24,14 +22,11 @@ public class Game extends Applet implements Runnable
 
 	public void init()
 	{
-		this.backbuffer = new BufferedImage(screenWidth, screenHeigth, BufferedImage.TYPE_INT_RGB);
+		this.bufferedImage = new BufferedImage(screenWidth, screenHeigth, BufferedImage.TYPE_INT_RGB);
 
-		this.g2d = backbuffer.createGraphics();
+		this.graphics2D = bufferedImage.createGraphics();
 		
 		addKeyListener(Keyboard.getInstance());
-		setFocusable(true);
-
-	//	SceneManager.setup();
 	}
 
 	public void start()
@@ -47,39 +42,28 @@ public class Game extends Applet implements Runnable
 
 	public void run()
 	{
-		Thread t = Thread.currentThread();
+		Thread thread = Thread.currentThread();
 
-		while (t == this.gameLoop)
+		while (thread == this.gameLoop)
 		{
-			try
-			{
-				Thread.sleep(10);				
-			}
-			catch (InterruptedException e)
-			{
-				e.printStackTrace();
-			}	
-			
-			//Time.Update();	
-			
-			//SceneManager.scene.update();		
+			try { Thread.sleep(10); }
+			catch (InterruptedException e) { e.printStackTrace(); }	
+					
 			repaint();
 		}
 	}
 
-	public void update(Graphics g)
+	public void update(Graphics graphics)
 	{		
-		//SceneManager.scene.update();	
 		core.update();
-		paint(g);
+		
+		paint(graphics);
 	}
 
-	public void paint(Graphics g)
+	public void paint(Graphics graphics)
 	{
-		//SceneManager.scene.draw(g2d);		
-
-		core.draw(g2d);
+		core.draw(graphics2D);
 		
-		g.drawImage(backbuffer, 0, 0, this);
+		graphics.drawImage(bufferedImage, 0, 0, this);
 	}
 }
