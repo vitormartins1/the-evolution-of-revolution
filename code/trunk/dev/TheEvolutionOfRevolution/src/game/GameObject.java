@@ -26,8 +26,8 @@ abstract class GameObject extends Applet
 
 	public void update() { }
 
-	public void draw(Graphics g)
+	public void draw(Graphics graphics)
 	{
-		g.drawImage(image, position.x, position.y, dimension.x, dimension.y, null);
+		graphics.drawImage(image, position.x, position.y, dimension.x, dimension.y, null);
 	}
 }
