@@ -6,7 +6,7 @@ import java.applet.*;
 abstract class GameObject extends Applet
 {
 	private static final long serialVersionUID = 1L;
-	private Image image;
+	protected Image image;
 	public Point position;
 	public Point dimension;
 	
@@ -18,14 +18,12 @@ abstract class GameObject extends Applet
 		Load(filename);
 	}
 
-	public void Load(String filename)
+	public Image Load(String filename)
 	{
 		Toolkit tk = Toolkit.getDefaultToolkit();
 
-		image = tk.getImage(getClass().getResource(filename));
+		return image = tk.getImage(getClass().getResource(filename));
 	}
-	
-	public void SetImage(Image image){ this.image = image; }
 
 	public void Update() { }
 

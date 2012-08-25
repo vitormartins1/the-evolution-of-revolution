@@ -6,11 +6,13 @@ import java.awt.event.KeyEvent;
 
 public class Opening extends Scene
 {
-	Background background; 
+	Background background;
+	TesteDeAnimacao t;
 	
 	public Opening()
 	{
 		background = new Background(new Point(0,0), new Point(800,600), "/images/bg_opening.png");
+		t = new TesteDeAnimacao();
 	}
 	
 	@Override
@@ -24,5 +26,6 @@ public class Opening extends Scene
 	public void Draw(Graphics2D graphics)
 	{
 		background.Draw(graphics);
+		t.Draw(graphics);
 	}
 }
