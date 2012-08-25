@@ -12,7 +12,6 @@ using Microsoft.Xna.Framework.Graphics;
 #endregion
 
 using Foxpaw.Game2D.Graphics;
-using Foxpaw.Game.Xml.GenericPackage;
 
 namespace Foxpaw.Game2D
 {
