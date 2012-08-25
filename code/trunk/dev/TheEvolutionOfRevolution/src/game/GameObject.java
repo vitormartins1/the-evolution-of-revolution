@@ -10,6 +10,7 @@ abstract class GameObject extends Applet
 	public Point position;
 	public Point dimension;
 	
+	public GameObject(  ){  };
 	public GameObject(Point position, Point size, String filename)
 	{
 		this.position  = position;
@@ -23,6 +24,8 @@ abstract class GameObject extends Applet
 
 		image = tk.getImage(getClass().getResource(filename));
 	}
+	
+	public void SetImage(Image image){ this.image = image; }
 
 	public void Update() { }
 

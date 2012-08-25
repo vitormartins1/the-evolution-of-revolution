@@ -1,8 +1,10 @@
 package game;
 
+import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Point;
 import java.awt.Rectangle;
+import java.sql.Time;
 import java.util.LinkedList;
 
 /*
@@ -22,22 +24,21 @@ import java.util.LinkedList;
         protected State state, lastState; // Carrega o estado do personagem.
         protected Facing facing, lastFacing; // Carrega a direção do personagem.
 
-       ///// protected TimeSpan interval = TimeSpan.FromMilliseconds(200); // Intervalo em milésimos.
+        protected Time interval = new Time(200); // Intervalo em milésimos.
 
         private Point frameCount; // Contagem de frames.
         private LinkedList<Point> loopList; // Guarda os pontos de início e término de cada animação.
         private Image image; // Guarda a malha de Sprites.
         private Point currentFrame; // Ponto para multiplicação final.
         private Rectangle frame; // Recorte da textura mostrado na tela.
-       ////// private TimeSpan timer; // Contador de tempo.
+        private Time timer; // Contador de tempo.
         
         private int returningPoint; // Ponto de retorno quando chegar ao ponto final de animação.
 
         protected Animation(Facing facing, State state)
         {
-        	super(frameCount, size, filename)
-            ////timer = TimeSpan.Zero;
-            ////this.color = Color.White;
+            timer = new Time(0);
+            
             this.state = state;
             this.facing = facing;
             this.loopList = new LinkedList<Point>();
@@ -45,12 +46,12 @@ import java.util.LinkedList;
         /// <summary>Colocar uma nova textura e novos loops./// </summary>
         /// <param name="loops">Tamanho string[2]; Armazena inicio e término dos loops.</param>
         /// <param name="frameCount">Coluna e linha da matriz de frames.</param>
-        protected void ChangeTexture(Image image)
+        protected void ChangeTexture(Image image, Point frameCount, LinkedList<Point> loopList)
         {
             this.image = image;
 
-            /////this.frameCount = package.PointValue;
-            /////this.loopList = package.PointList;
+            this.frameCount = frameCount;
+            this.loopList = loopList;
 
             //Calcula o tamanho do frame.
             frame = new Rectangle(
@@ -63,32 +64,38 @@ import java.util.LinkedList;
 
         public void Update()
         {
-            //////timer += TimeSpan.FromMilliseconds(16); // Atualização de timer. * ~16 é 1000/60 *
+            timer.setTime(timer.getTime() + 16); // Atualização de timer. * ~16 é 1000/60 *
             
             if (lastState != state || lastFacing != facing) { SetPoints(); } // Se alterar-se atualize-se.
 
-            /*if (timer > interval) // Verificação de intervalo.
+            if (timer.getTime() > interval.getTime()) // Verificação de intervalo.
             {
-                if (currentFrame.X < returningPoint) { currentFrame.X++; } // Passagem de frame.
-                else { currentFrame.X = loopList[(int)state].X; } // Reseta o frame ao ponto inical do loop.
+                if (currentFrame.x < returningPoint) { currentFrame.x++; } // Passagem de frame.
+                else { currentFrame.x = loopList.get(returningPoint).x; } // Reseta o frame ao ponto inical do loop.
 
-                timer -= interval; // Reseta o timer.
-            }*/
+                timer.setTime(timer.getTime() - interval.getTime()); // Reseta o timer.
+            }
         }
-
-        public void Draw(Point position)
+        
+        @Override
+        public void Draw(Graphics graphic)
         {
             frame.x = currentFrame.x * frame.width;
             frame.y = currentFrame.y * frame.height;
-            //////spriteBatch.Draw(image
+            
+            this.image.getGraphics().clipRect(frame.x, frame.y, frame.width, frame.height);
+            
+            super.Draw(graphic);
         }
 
         //Mudar intervalo de frames.
-        protected void SetFrameRate(int milliseconds) { interval = TimeSpan.FromMilliseconds(milliseconds); }
+        protected void SetFrameRate(int milliseconds) { interval = new Time(milliseconds); }
 
         private void SetPoints()
         {
         	Point PositionValues = EnumReturner(facing, state);
+        	returningPoint = PositionValues.y;
+        	
             returningPoint = loopList.get(PositionValues.x).y; // Define ponto de retorno.
 
             currentFrame.y = PositionValues.y; // Define a linha da matriz de frames.
