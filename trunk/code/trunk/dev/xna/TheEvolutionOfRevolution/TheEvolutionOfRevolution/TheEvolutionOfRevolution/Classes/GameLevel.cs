@@ -23,12 +23,12 @@ namespace TheEvolutionOfRevolution
         {
             base.LoadContent(content);
             this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//bg_game"));
-            genericCharacter = new GenericCharacter(content.Load<Texture2D>("Sprite"), Vector2.Zero); genericCharacter = new GenericCharacter(content.Load<Texture2D>("Sprite"), Vector2.Zero);
+            //genericCharacter = new GenericCharacter(content.Load<Texture2D>("Sprite"), Vector2.Zero); genericCharacter = new GenericCharacter(content.Load<Texture2D>("Sprite"), Vector2.Zero);
         }
 
         public override void Update(GameTime gameTime)
         {
-            genericCharacter.Update();
+            //genericCharacter.Update();
             base.Update(gameTime);
         }
 
@@ -37,7 +37,7 @@ namespace TheEvolutionOfRevolution
             if (background != null)
                 background.Draw(spritebatch);
 
-            genericCharacter.Draw(spritebatch);
+            //genericCharacter.Draw(spritebatch);
 
             base.Draw(spritebatch);
         }

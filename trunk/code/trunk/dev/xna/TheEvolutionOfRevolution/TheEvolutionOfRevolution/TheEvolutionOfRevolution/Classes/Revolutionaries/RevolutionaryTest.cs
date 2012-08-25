@@ -14,13 +14,29 @@ namespace TheEvolutionOfRevolution
 {
     class RevolutionaryTest : Character
     {
-        public RevolutionaryTest(Vector2 position, Facing facing, State state)
-            : base(Type.Revolutionary, position, facing, state)
+        public RevolutionaryTest(Texture2D texture)
+            : base(1,Type.Revolutionary, Vector2.Zero, Facing.West, State.Walking)
         {
+            base.hp = 80;
+            base.attack = 13;
+            base.range = 3;
+
+            Point frameCount = new Point(6, 4);
+            List<Point> loopList = new List<Point>()
+            {
+                Point.Zero,
+                new Point(1, 5)
+            };
+
+            base.Initialize(texture, frameCount, loopList);
         }
 
         public override void Update()
         {
+            if (!attacking)
+                position.X--;
+            System.Console.WriteLine("Revolutionary: " + position.ToString());
+
             base.Update();
         }
 

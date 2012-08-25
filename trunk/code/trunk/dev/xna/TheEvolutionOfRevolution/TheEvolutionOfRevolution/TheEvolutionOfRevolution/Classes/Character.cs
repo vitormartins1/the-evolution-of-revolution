@@ -19,10 +19,13 @@ namespace TheEvolutionOfRevolution
 
         public Type type;
 
-        protected Character(Type type, Vector2 position, Facing facing, State state)
+        protected Character(int ID, Type type, Vector2 position, Facing facing, State state)
             : base(position, facing, state)
         {
-            SetParameters(type);
+            if (ID == 0)
+                base.position = Vector2.Zero;
+            else
+                base.position = new Vector2(600, 0);
         }
 
         public virtual void Update()
@@ -52,25 +55,6 @@ namespace TheEvolutionOfRevolution
             else
             {
                 attackedEnemy = null;
-            }
-        }
-
-        private void SetParameters(Type type)
-        {
-            switch (type)
-            {
-                case Type.Enemy:
-                    ID = 0;
-                    attack = 5;
-                    hp = 40;
-                    break;
-                case Type.Revolutionary:
-                    ID = 1;
-                    attack = 6;
-                    hp = 39;
-                    break;
-                default:
-                    break;
             }
         }
 
