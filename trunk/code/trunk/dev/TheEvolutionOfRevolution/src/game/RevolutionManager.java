@@ -11,29 +11,26 @@ public class RevolutionManager
 	
 	public RevolutionManager()
 	{
-		initialRevolutionaries = 5;
+		initialRevolutionaries = 1;
 		
 		revolutionaries = new LinkedList<Revolutionary>();
 		
 		for (int i = 0; i < initialRevolutionaries; i++)
         {
-            revolutionaries.add(new Revolutionary(new Point(700,520), new Point(50, 60), "/images/megaman.gif" ));
+            revolutionaries.add(new CheGuevara(new Point(700,520), new Point(50, 60), "/images/megaman.gif" ));
+            revolutionaries.add(new GeorgeWashington(new Point(700,520), new Point(50, 60), "/images/megaman.gif" ));
         }
 	}
 	
 	public void Update()
 	{
 		for ( Revolutionary r : revolutionaries)
-		{
 			r.Update();
-		}
 	}
 	
 	public void Draw(Graphics2D graphics)
 	{
 		for ( Revolutionary r : revolutionaries)
-		{
 			r.Draw(graphics);
-		}
 	}
 }
