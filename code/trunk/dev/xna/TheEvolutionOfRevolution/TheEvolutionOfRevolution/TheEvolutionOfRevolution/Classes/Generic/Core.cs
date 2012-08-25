@@ -11,8 +11,6 @@ namespace Foxpaw.Game
     {
         ContentManager content;
 
-        GenericCharacter genericCharacter;
-
         public Core(ContentManager content, GraphicsDevice graphicsDevice, GameWindow window) : base(window)
         {
             this.content = content;
@@ -22,23 +20,18 @@ namespace Foxpaw.Game
 
         public void Initialiaze()
         {
-            genericCharacter = new GenericCharacter(content.Load<Texture2D>("Sprite"), Vector2.Zero);
             SceneManager.Setup();
             SceneManager.LoadContent(content);
         }
 
         public void Update(GameTime gameTime) 
         {
-            genericCharacter.Update();
-
             SceneManager.Update(gameTime);
             base.Verify(gameTime);
         }
 
         public void Draw(SpriteBatch spriteBatch) 
         {
-            genericCharacter.Draw(spriteBatch);
-
             SceneManager.Draw(spriteBatch);
             base.Show();
         }
