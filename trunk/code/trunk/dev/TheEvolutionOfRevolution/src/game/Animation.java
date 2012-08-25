@@ -1,9 +1,13 @@
 package game;
 
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Point;
 import java.awt.Rectangle;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+import java.awt.image.ImageObserver;
 import java.sql.Time;
 import java.util.LinkedList;
 
@@ -12,41 +16,56 @@ import java.util.LinkedList;
 |Programado por Willian Silva (Kipip) - williansilva.nave@gmail.com  |
 |--------------------------------------------------------------------|
 */
-
-    abstract class Animation extends GameObject
+    abstract class Animation
     {
 	private static final long serialVersionUID = 1L;
 
 		// Valores a serem multiplicados.
-        public enum Facing { North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest } // Y.
+        public enum Facing { North, East, South, West} // Y.
         public enum State { Stand, Dead, Walk, Fight, Hit } // X. Também guarda o index a ser pego na lista de pontos.
 
         protected State state, lastState; // Carrega o estado do personagem.
         protected Facing facing, lastFacing; // Carrega a direção do personagem.
 
-        protected Time interval = new Time(200); // Intervalo em milésimos.
+        protected int interval = 200; // Intervalo em milésimos.
 
+        private Point positionValues;
         private LinkedList<Point> loopList; // Guarda os pontos de início e término de cada animação.
         private Image image, storedImage; // Guarda a malha de Sprites.
         private Point currentFrame; // Ponto para multiplicação final.
         private Rectangle frame; // Recorte da textura mostrado na tela.
-        private Time timer; // Contador de tempo.
+        private int timer; // Contador de tempo.
         
         private int returningPoint; // Ponto de retorno quando chegar ao ponto final de animação.
 
-        protected Animation(Facing facing, State state)
+        protected Animation(Facing facing, State state, Point frameCount,
+        		LinkedList<Point> loopList, String filename)
         {
-            timer = new Time(0);
+            timer = 0;
             
-            this.currentFrame = new Point();
+            this.currentFrame = new Point(0, 0);
             this.state = state;
             this.facing = facing;
-            this.loopList = new LinkedList<Point>();
+            this.loopList = loopList;
+            this.image = this.storedImage = Load(filename);
+            frame = new Rectangle(
+            		192 / frameCount.x,
+            		256 / frameCount.y
+            		);
+
+            SetPoints();
+        }
+
+        protected Image Load(String filename)
+        {
+    		Toolkit tk = Toolkit.getDefaultToolkit();
+    		
+    		return image = tk.getImage(getClass().getResource(filename));
         }
         
-        protected void ChangeTexture(Image image, Point frameCount, LinkedList<Point> loopList)
+      /*  protected void ChangeTexture(String filename, Point frameCount, )
         {
-            this.image = this.storedImage = image;
+            this.image = this.storedImage = Load(filename);
 
             this.loopList = loopList;
 
@@ -57,51 +76,48 @@ import java.util.LinkedList;
             		);
 
             SetPoints();
-        }
+        }*/
 
         public void Update()
         {
-            timer.setTime(timer.getTime() + 16); // Atualização de timer. * ~16 é 1000/60 *
+        	
+        	System.out.println(currentFrame.x);
+            timer +=10; // Atualização de timer. * ~16 é 1000/60 *
             
             if (lastState != state || lastFacing != facing) { SetPoints(); } // Se alterar-se atualize-se.
 
-            if (timer.getTime() > interval.getTime()) // Verificação de intervalo.
+            if (timer > interval) // Verificação de intervalo.
             {
                 if (currentFrame.x < returningPoint) { currentFrame.x++; } // Passagem de frame.
-                else { currentFrame.x = loopList.get(returningPoint).x; } // Reseta o frame ao ponto inical do loop.
+                else { currentFrame.x = loopList.get(positionValues.y).x; } // Reseta o frame ao ponto inical do loop.
 
-                timer.setTime(timer.getTime() - interval.getTime()); // Reseta o timer.
+                timer-= interval; // Reseta o timer.
             }
         }
         
-        @Override
         public void Draw(Graphics graphics)
-        {
+        {        	
             frame.x = currentFrame.x * frame.width;
             frame.y = currentFrame.y * frame.height;
             
-            //this.image.getGraphics().clipRect(frame.x, frame.y, frame.width, frame.height);
-            
-            super.image = this.image;
-            
-            //this.image = this.storedImage;
-            
-            super.Draw(graphics);
+            //Graphics test = this.image.getGraphics().create(frame.x, frame.y, frame.width, frame.height);
+            //test.drawImage(image, 0, 0, 100, 100, frame.x, frame.y, frame.width, frame.height, null);
+            graphics.drawImage(image, 0, 0, frame.width, frame.height, frame.x, frame.y, frame.width, frame.height, null);
         }
 
         //Mudar intervalo de frames.
-        protected void SetFrameRate(int milliseconds) { interval = new Time(milliseconds); }
+        protected void SetFrameRate(int milliseconds) { interval = milliseconds; }
 
         private void SetPoints()
         {
+        	positionValues = EnumReturner(facing, state);
         	
-        	Point PositionValues = EnumReturner(facing, state);
-        	returningPoint = PositionValues.y;
+        	returningPoint = positionValues.y;
         	
-            returningPoint = loopList.get(PositionValues.x).y; // Define ponto de retorno.
+            returningPoint = loopList.get(positionValues.x).y; // Define ponto de retorno.
 
-            currentFrame.y = PositionValues.y; // Define a linha da matriz de frames.
-            currentFrame.x = loopList.get(PositionValues.y).x; // Reseta o frame ao ponto inical do loop.
+            currentFrame.y = positionValues.y; // Define a linha da matriz de frames.
+            currentFrame.x = loopList.get(positionValues.y).x; // Reseta o frame ao ponto inical do loop.
 
             // Define os últimos estados. * Para verificação de atualização*
             lastState = state;
@@ -115,13 +131,9 @@ import java.util.LinkedList;
         	switch(facing)
         	{
         		case North    : tempValue.y = 0; break;
-        		case NorthEast: tempValue.y = 1; break;
-        		case East     : tempValue.y = 2; break;
-        		case SouthEast: tempValue.y = 3; break;
-        		case South    : tempValue.y = 4; break;
-        		case SouthWest: tempValue.y = 5; break;
-        		case West	  : tempValue.y = 6; break;
-        		case NorthWest: tempValue.y = 7; break;
+        		case East     : tempValue.y = 1; break;
+        		case South    : tempValue.y = 2; break;
+        		case West	  : tempValue.y = 3; break;
         	}
         	
         	switch(state)

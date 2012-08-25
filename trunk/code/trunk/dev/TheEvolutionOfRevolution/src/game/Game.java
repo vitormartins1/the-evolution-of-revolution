@@ -61,7 +61,7 @@ public class Game extends Applet implements Runnable
 	}
 
 	public void paint(Graphics graphics)
-	{
+	{	
 		core.draw(graphics2D);
 		
 		graphics.drawImage(bufferedImage, 0, 0, this);
