@@ -17,13 +17,13 @@ public class GameLevel extends Scene
 	@Override
 	public void Update()
 	{
-		player.update();
+		player.Update();
 	}
 
 	@Override
 	public void Draw(Graphics2D graphics)
 	{
-		background.draw(graphics);
-		player.draw(graphics);
+		background.Draw(graphics);
+		player.Draw(graphics);
 	}
 }

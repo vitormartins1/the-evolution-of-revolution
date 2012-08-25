@@ -13,7 +13,7 @@ public class Player extends GameObject
 	}
 
 	@Override
-    public void update()
+    public void Update()
     {	
 		if (Keyboard.getInstance().isKeyPressed(KeyEvent.VK_LEFT))
 		{
@@ -24,6 +24,6 @@ public class Player extends GameObject
 			super.position.x+=10;
 		}
 		
-        super.update();
+        super.Update();
     }
 }
