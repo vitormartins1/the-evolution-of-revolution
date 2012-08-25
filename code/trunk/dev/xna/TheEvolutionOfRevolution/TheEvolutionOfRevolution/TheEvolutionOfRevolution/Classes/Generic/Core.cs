@@ -24,6 +24,7 @@ namespace Foxpaw.Game
             SceneManager.LoadContent(content);
 
             CharacterManager.AddCharacter(new TesteEnemy(content.Load<Texture2D>("Sprite")));
+            CharacterManager.AddCharacter(new RevolutionaryTest(content.Load<Texture2D>("Sprite")));
         }
 
         public void Update(GameTime gameTime) 

@@ -6,7 +6,8 @@ namespace TheEvolutionOfRevolution
 {
     class TesteEnemy : Character
     {
-        public TesteEnemy(Texture2D texture) : base(Type.Enemy, Vector2.Zero, Facing.East, State.Walking)
+        public TesteEnemy(Texture2D texture)
+            : base(0,Type.Enemy, Vector2.Zero, Facing.East, State.Walking)
         {
             base.hp = 100;
             base.attack = 10;
@@ -24,8 +25,9 @@ namespace TheEvolutionOfRevolution
 
         public override void Update()
         {
-            position.X++;
-            System.Console.WriteLine(position.ToString());
+            if (!attacking)
+                position.X++;
+            System.Console.WriteLine("Enemy: " + position.ToString());
 
             base.Update();
         }
