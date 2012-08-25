@@ -6,7 +6,7 @@ import java.util.LinkedList;
 
 public class RevolutionManager
 {
-	private LinkedList<Revolutionary> revolutionaries;
+	public LinkedList<Revolutionary> revolutionaries;
 	private int initialRevolutionaries;
 	
 	public RevolutionManager()
@@ -17,8 +17,8 @@ public class RevolutionManager
 		
 		for (int i = 0; i < initialRevolutionaries; i++)
         {
-            revolutionaries.add(new CheGuevara(new Point(700,520), new Point(50, 60), "/images/megaman.gif" ));
-            revolutionaries.add(new GeorgeWashington(new Point(700,520), new Point(50, 60), "/images/megaman.gif" ));
+            revolutionaries.add(new CheGuevara(new Point(700,520), new Point(50, 60), "/images/megaman.png" ));
+            revolutionaries.add(new GeorgeWashington(new Point(700,520), new Point(50, 60), "/images/megaman.png" ));
         }
 	}
 	

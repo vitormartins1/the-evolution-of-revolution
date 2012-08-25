@@ -2,10 +2,9 @@ package game;
 
 import java.awt.Point;
 
-public class CheGuevara extends Revolutionary
+public class Hitler extends Opponent
 {
-
-	public CheGuevara(Point position, Point size, String filename)
+	public Hitler(Point position, Point size, String filename)
 	{
 		super(position, size, filename);
 	}
@@ -14,9 +13,8 @@ public class CheGuevara extends Revolutionary
 	public void Update()
 	{
 		if (!fighting)
-			position.x -= 1;
+			position.x += 1;
 	}
 	
 	private static final long serialVersionUID = 1L;
-
 }

@@ -2,11 +2,11 @@ package game;
 
 import java.awt.Point;
 
-public abstract class Revolutionary extends GameObject
+public abstract class Opponent extends GameObject
 {
 	public boolean fighting;
 	
-	public Revolutionary(Point position, Point size, String filename)
+	public Opponent(Point position, Point size, String filename)
 	{
 		super(position, size, filename);
 	}
