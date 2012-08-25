@@ -30,7 +30,7 @@ namespace Foxpaw.Game2D.Graphics
         private List<Point> loopList; // Guarda os pontos de início e término de cada animação.
         private Texture2D texture; // Guarda a malha de Sprites.
         private Point currentFrame; // Ponto para multiplicação final.
-        private Rectangle frame; // Recorte da textura mostrado na tela.
+        protected Rectangle frame; // Recorte da textura mostrado na tela.
         private TimeSpan timer; // Contador de tempo.
         
         private int returningPoint; // Ponto de retorno quando chegar ao ponto final de animação.

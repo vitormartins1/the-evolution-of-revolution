@@ -19,8 +19,7 @@ namespace TheEvolutionOfRevolution
         {
             base.hp = 80;
             base.attack = 1;
-            base.range = 3;
-            base.ID = -1;
+            base.range = 0;
 
             Point frameCount = new Point(6, 4);
             List<Point> loopList = new List<Point>()

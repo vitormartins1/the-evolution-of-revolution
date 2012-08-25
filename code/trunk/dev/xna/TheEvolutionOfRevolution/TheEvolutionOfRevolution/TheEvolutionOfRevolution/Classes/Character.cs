@@ -20,10 +20,12 @@ namespace TheEvolutionOfRevolution
         protected Character(int ID, Type type, Vector2 position, Facing facing, State state)
             : base(position, facing, state)
         {
+            this.ID = ID;
+
             if (ID == 0)
                 base.position = new Vector2(0, 500);
             else
-                base.position = new Vector2(600, 500);
+                base.position = new Vector2(800, 500);
         }
 
         public override void Update()
@@ -49,8 +51,8 @@ namespace TheEvolutionOfRevolution
 
         public void TryAttack(Character enemy)
         {
-            if (this.position.X + range+ID < enemy.position.X && this.position.X > enemy.position.X
-                || this.position.X + range + ID > enemy.position.X && this.position.X < enemy.position.X)
+            if (this.position.X -base.frame.Width + range < enemy.position.X && this.position.X > enemy.position.X
+                || this.position.X +base.frame.Width + range > enemy.position.X && this.position.X < enemy.position.X)
             {
                 attacking = true;
                 attackedEnemy = enemy;

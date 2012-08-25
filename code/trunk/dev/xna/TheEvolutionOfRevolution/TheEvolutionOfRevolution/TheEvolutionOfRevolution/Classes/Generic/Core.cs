@@ -31,7 +31,7 @@ namespace Foxpaw.Game
 
             if (Microsoft.Xna.Framework.Input.Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Space))
             {
-                if (i > 100)
+                if (i > 60)
                 {
                     CharacterManager.AddCharacter(new RevolutionaryTest(content.Load<Texture2D>("Sprite")));
                     CharacterManager.AddCharacter(new TesteEnemy(content.Load<Texture2D>("Sprite")));
