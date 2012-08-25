@@ -22,13 +22,22 @@ namespace Foxpaw.Game
         {
             SceneManager.Setup();
             SceneManager.LoadContent(content);
-
-            CharacterManager.AddCharacter(new TesteEnemy(content.Load<Texture2D>("Sprite")));
-            CharacterManager.AddCharacter(new RevolutionaryTest(content.Load<Texture2D>("Sprite")));
         }
+
 
         public void Update(GameTime gameTime) 
         {
+            if (Microsoft.Xna.Framework.Input.Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.D))
+            {
+            CharacterManager.AddCharacter(new RevolutionaryTest(content.Load<Texture2D>("Sprite")));
+
+            }
+            if (Microsoft.Xna.Framework.Input.Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.A))
+            {
+                CharacterManager.AddCharacter(new TesteEnemy(content.Load<Texture2D>("Sprite")));
+            }
+
+
             CharacterManager.Update();
             SceneManager.Update(gameTime);
             base.Verify(gameTime);
