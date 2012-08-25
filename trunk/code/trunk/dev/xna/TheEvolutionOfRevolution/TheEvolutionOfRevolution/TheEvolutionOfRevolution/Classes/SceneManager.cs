@@ -24,8 +24,6 @@ namespace TheEvolutionOfRevolution
 
         static string text;
 
-        static SpriteFont arial;
-
         static public void Setup()
         {
             text = "OPENING";
@@ -38,7 +36,6 @@ namespace TheEvolutionOfRevolution
         {
             scene.LoadContent(content);
             SceneManager.content = content;
-            arial = content.Load<SpriteFont>("Arial");
         }
 
         public static void Update(GameTime gameTime)
@@ -51,7 +48,6 @@ namespace TheEvolutionOfRevolution
         static public void Draw(SpriteBatch spriteBatch)
         {
             scene.Draw(spriteBatch);
-            spriteBatch.DrawString(arial, text, Vector2.Zero, Color.White);
         }
 
         static public void changeScene(int level)

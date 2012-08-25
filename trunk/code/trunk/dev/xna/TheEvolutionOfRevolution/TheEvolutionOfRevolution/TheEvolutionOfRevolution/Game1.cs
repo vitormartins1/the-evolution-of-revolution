@@ -50,7 +50,9 @@ namespace TheEvolutionOfRevolution
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            core.Draw();
+            spriteBatch.Begin();
+            core.Draw(spriteBatch);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
