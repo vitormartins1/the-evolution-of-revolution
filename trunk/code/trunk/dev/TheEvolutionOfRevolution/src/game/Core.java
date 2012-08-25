@@ -9,8 +9,7 @@ public class Core
 	
 	public Core()
 	{	
-		player = new Player(new Point(300, 400), new Point(100, 125));
-		player.load( "/images/cat_1.png" );
+		player = new Player(new Point(300, 400), new Point(100, 125), "/images/cat_1.png" );
 	}
 
 	public void update()

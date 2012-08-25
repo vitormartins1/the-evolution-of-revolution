@@ -2,7 +2,6 @@ package game;
 
 import java.awt.*;
 import java.applet.*;
-import java.net.*;
 
 abstract class GameObject extends Applet
 {
@@ -11,46 +10,24 @@ abstract class GameObject extends Applet
 	public Point position;
 	public Point dimension;
 	
-	public GameObject(Point position, Point size)
+	public GameObject(Point position, Point size, String filename)
 	{
 		this.position  = position;
 		this.dimension = size;
+		Load(filename);
 	}
 
-	public Image getImage() {
-		return image;
-	}
-
-	public void setImage(Image image) {
-		this.image = image;
-	}
-
-	protected URL getURL(String filename)
-	{
-		URL url = null;
-		try
-		{
-			url = this.getClass().getResource(filename);
-		}
-		catch (Exception e) { }
-		return url;
-	}
-
-	public void load(String filename)
+	public void Load(String filename)
 	{
 		Toolkit tk = Toolkit.getDefaultToolkit();
 
-		image = tk.getImage(getURL(filename));
+		image = tk.getImage(getClass().getResource(filename));
 	}
 
-	public  void update()
-	{
-	
-	}
+	public  void update() { }
 
 	public void draw(Graphics g)
 	{
-		g.drawImage(image, (int)this.position.getX(), (int)this.position.getY(), 
-				(int)this.dimension.getX(), (int)this.dimension.getY(), this);
+		g.drawImage(image, position.x, position.y, dimension.x, dimension.y, null);
 	}
 }
