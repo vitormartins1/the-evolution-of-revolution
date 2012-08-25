@@ -6,9 +6,6 @@ using Foxpaw.Game;
 
 namespace TheEvolutionOfRevolution
 {
-    /// <summary>
-    /// This is the main type for your game
-    /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
@@ -26,6 +23,10 @@ namespace TheEvolutionOfRevolution
         {
             core = new Core(Content, GraphicsDevice, Window);
             IsMouseVisible = true;
+
+            graphics.PreferredBackBufferWidth = 800;
+            graphics.PreferredBackBufferHeight = 600;
+            graphics.ApplyChanges();
 
             base.Initialize();
         }
