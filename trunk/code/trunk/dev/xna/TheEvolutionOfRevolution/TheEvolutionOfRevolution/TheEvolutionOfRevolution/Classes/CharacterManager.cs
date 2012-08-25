@@ -22,16 +22,24 @@ namespace TheEvolutionOfRevolution
 
                     character.Update();
 
-                    foreach (Character c in characterList)
+                    if (characterList.Count == 1) { character.attacking = false; }
+                    else
                     {
-                        if (character.ID != c.ID)
+                        bool b = false;
+                        foreach (Character c in characterList)
                         {
-                            character.TryAttack(c);
+                            if (character.ID != c.ID)
+                            {
+                                b = true;
+                                character.TryAttack(c);
+                            }
+                        }
+                        if (!b)
+                        {
+                            character.attacking = false;
                         }
                     }
-
                     if (character.hp <= 0) { characterList.Remove(character); }
-
                 }
             }
 

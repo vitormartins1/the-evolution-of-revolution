@@ -16,8 +16,7 @@ namespace TheEvolutionOfRevolution
         public bool attacking;
 
         private Character attackedEnemy;
-
-        public Type type;
+        public Character attacker;
 
         protected Character(int ID, Type type, Vector2 position, Facing facing, State state)
             : base(position, facing, state)
@@ -35,6 +34,7 @@ namespace TheEvolutionOfRevolution
                 // state = State.Attacking;
                 attackedEnemy.hp -= attack;
             }
+            else { attacking = false; }
 
             base.Update();
         }
@@ -47,15 +47,16 @@ namespace TheEvolutionOfRevolution
 
         public void TryAttack(Character enemy)
         {
-            if (this.position.X + range < enemy.position.X && this.position.X < enemy.position.X)
+            if (this.position.X + range+ID < enemy.position.X && this.position.X > enemy.position.X
+                || this.position.X + range + ID > enemy.position.X && this.position.X < enemy.position.X)
             {
                 attacking = true;
                 attackedEnemy = enemy;
+                enemy.attacker = this;
+                return;
             }
-            else
-            {
-                attackedEnemy = null;
-            }
+
+            // attackedEnemy = null;
         }
 
         public enum Type

@@ -18,8 +18,9 @@ namespace TheEvolutionOfRevolution
             : base(1,Type.Revolutionary, Vector2.Zero, Facing.West, State.Walking)
         {
             base.hp = 80;
-            base.attack = 13;
+            base.attack = 1;
             base.range = 3;
+            base.ID = -1;
 
             Point frameCount = new Point(6, 4);
             List<Point> loopList = new List<Point>()
@@ -34,9 +35,9 @@ namespace TheEvolutionOfRevolution
         public override void Update()
         {
             if (!attacking)
+            {
                 position.X--;
-            System.Console.WriteLine("Revolutionary: " + position.ToString());
-
+            }
             base.Update();
         }
 

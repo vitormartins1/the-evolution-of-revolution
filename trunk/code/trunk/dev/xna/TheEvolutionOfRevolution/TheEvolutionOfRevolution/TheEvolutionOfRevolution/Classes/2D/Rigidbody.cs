@@ -16,7 +16,7 @@ namespace Foxpaw.Game2D
         //public enum Density { Solid, Soft } //Maybe later
 
         public bool kinematic; // Causar, mas não receber efeitos de física.
-        private Rectangle bounding; // Retângulo de colisão.
+        public Rectangle bounding; // Retângulo de colisão.
 
         public Rigidbody(Vector2 position, Point size, bool isKinematic)
         {
