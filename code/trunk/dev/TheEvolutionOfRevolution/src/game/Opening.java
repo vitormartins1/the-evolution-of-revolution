@@ -3,6 +3,7 @@ package game;
 import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.event.KeyEvent;
+import java.util.LinkedList;
 
 public class Opening extends Scene
 {
@@ -12,7 +13,10 @@ public class Opening extends Scene
 	public Opening()
 	{
 		background = new Background(new Point(0,0), new Point(800,600), "/images/bg_opening.png");
-		t = new TesteDeAnimacao();
+		
+		LinkedList<Point> l = new LinkedList<Point>();
+		l.add(new Point(0,7));
+		t = new TesteDeAnimacao(l);
 	}
 	
 	@Override
@@ -20,6 +24,7 @@ public class Opening extends Scene
 	{
 		if (Keyboard.getInstance().isKeyPressed(KeyEvent.VK_ENTER))
 			SceneManager.ChangeScene(1);
+		t.Update();
 	}
 
 	@Override
