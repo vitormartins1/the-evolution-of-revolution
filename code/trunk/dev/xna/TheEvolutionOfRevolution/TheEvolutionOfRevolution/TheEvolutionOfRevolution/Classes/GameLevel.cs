@@ -22,7 +22,7 @@ namespace TheEvolutionOfRevolution
         public override void LoadContent(ContentManager content)
         {
             base.LoadContent(content);
-            this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//bastilha"), new Point(800,600));
+            this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//russia"), new Point(800,600));
             //genericCharacter = new GenericCharacter(content.Load<Texture2D>("Sprite"), Vector2.Zero); genericCharacter = new GenericCharacter(content.Load<Texture2D>("Sprite"), Vector2.Zero);
         }
 
