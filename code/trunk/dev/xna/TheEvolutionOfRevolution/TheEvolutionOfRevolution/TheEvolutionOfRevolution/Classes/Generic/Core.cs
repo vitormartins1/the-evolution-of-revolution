@@ -33,13 +33,11 @@ namespace Foxpaw.Game
             {
                 if (i > 60)
                 {
-                    CharacterManager.AddCharacter(new RevolutionaryTest(content.Load<Texture2D>("Sprite")));
-                    CharacterManager.AddCharacter(new TesteEnemy(content.Load<Texture2D>("Sprite")));
+                    CharacterManager.AddCharacter(new Robespierre(content.Load<Texture2D>("Sprite")));
+                    CharacterManager.AddCharacter(new LuizXVI(content.Load<Texture2D>("Sprite")));
                     i = 0;
                 }
             }
-
-
 
             CharacterManager.Update();
             SceneManager.Update(gameTime);
