@@ -16,6 +16,10 @@ namespace TheEvolutionOfRevolution
 
             public static void Update()
             {
+                if (Microsoft.Xna.Framework.Input.Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Space))
+                {
+                    System.Console.WriteLine("LIST COUNT: " + characterList.Count);
+                }
                 for (int index = 0; index < characterList.Count; index++)
                 {
                     Character character = characterList[index];

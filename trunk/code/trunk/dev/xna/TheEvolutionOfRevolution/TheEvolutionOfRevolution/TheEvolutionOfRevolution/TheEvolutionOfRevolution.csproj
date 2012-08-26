@@ -115,6 +115,8 @@
     <Compile Include="Classes\Background.cs" />
     <Compile Include="Classes\Character.cs" />
     <Compile Include="Classes\CharacterManager.cs" />
+    <Compile Include="Classes\Enemies\LuizXVI.cs" />
+    <Compile Include="Classes\Enemies\MariaAntonieta.cs" />
     <Compile Include="Classes\Enemies\TestEnemy.cs" />
     <Compile Include="Classes\GameLevel.cs" />
     <Compile Include="Classes\GameOver.cs" />
@@ -122,7 +124,10 @@
     <Compile Include="Classes\Generic\FrameRateDisplayer.cs" />
     <Compile Include="Classes\Generic\ParticleEmitter.cs" />
     <Compile Include="Classes\Opening.cs" />
+    <Compile Include="Classes\Revolutionaries\GeorgesDanton.cs" />
+    <Compile Include="Classes\Revolutionaries\JeanPaulMarat.cs" />
     <Compile Include="Classes\Revolutionaries\RevolutionaryTest.cs" />
+    <Compile Include="Classes\Revolutionaries\Robespierre.cs" />
     <Compile Include="Classes\Scene.cs" />
     <Compile Include="Classes\SceneManager.cs" />
     <Compile Include="GenericCharacter.cs" />
