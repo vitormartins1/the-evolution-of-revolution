@@ -1,2 +1,3 @@
 C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolutionContent\obj\x86\Debug\TheEvolutionOfRevolutionContent.contentprojResolveAssemblyReference.cache
 C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolutionContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolutionContent\obj\x86\Debug\ResolveAssemblyReference.cache
