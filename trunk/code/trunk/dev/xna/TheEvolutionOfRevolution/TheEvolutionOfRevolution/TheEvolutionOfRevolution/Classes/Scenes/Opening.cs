@@ -30,7 +30,7 @@ namespace TheEvolutionOfRevolution
         {
             timeToChangeScene += gameTime.ElapsedGameTime.Milliseconds;
 
-            if (timeToChangeScene >= 2000)
+            if (timeToChangeScene >= 500)
             {
                 SceneManager.changeScene(1);
             }

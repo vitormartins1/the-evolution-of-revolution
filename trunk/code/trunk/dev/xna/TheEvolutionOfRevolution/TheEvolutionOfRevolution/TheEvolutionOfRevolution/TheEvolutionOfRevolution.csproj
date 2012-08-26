@@ -119,13 +119,13 @@
     <Compile Include="Classes\Enemies\LuizXVI.cs" />
     <Compile Include="Classes\Enemies\MariaAntonieta.cs" />
     <Compile Include="Classes\Enemies\TestEnemy.cs" />
-    <Compile Include="Classes\GameLevel.cs" />
-    <Compile Include="Classes\GameOver.cs" />
+    <Compile Include="Classes\Scenes\GameLevel.cs" />
+    <Compile Include="Classes\Scenes\GameOver.cs" />
     <Compile Include="Classes\Generic\Button.cs" />
     <Compile Include="Classes\Generic\Core.cs" />
     <Compile Include="Classes\Generic\FrameRateDisplayer.cs" />
     <Compile Include="Classes\Generic\ParticleEmitter.cs" />
-    <Compile Include="Classes\Opening.cs" />
+    <Compile Include="Classes\Scenes\Opening.cs" />
     <Compile Include="Classes\Revolutionaries\GeorgesDanton.cs" />
     <Compile Include="Classes\Revolutionaries\JeanPaulMarat.cs" />
     <Compile Include="Classes\Revolutionaries\RevolutionaryTest.cs" />
