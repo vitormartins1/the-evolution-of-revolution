@@ -15,7 +15,6 @@ namespace TheEvolutionOfRevolution
         public int ID;
         public float velocity;
         public bool attacking;
-        public int depth = 0;
 
         private Character attackedEnemy;
 
@@ -24,10 +23,12 @@ namespace TheEvolutionOfRevolution
         {
             this.ID = ID;
 
+            System.Random random = new System.Random();
+
             if (ID == 0)
-                base.position = new Vector2(0, 500);
+                base.position = new Vector2(0, 500 + (random.Next(0, 50) - random.Next(0, 50)));
             else
-                base.position = new Vector2(800, 500);
+                base.position = new Vector2(800, 500 + (random.Next(0, 50) - random.Next(0, 50)));
         }
 
         public override void Update()
@@ -53,7 +54,7 @@ namespace TheEvolutionOfRevolution
 
         public void TryAttack(Character enemy)
         {
-            if (this.position.X -base.frame.Width + range < enemy.position.X && this.position.X > enemy.position.X
+            if (this.position.X -base.frame.Width - range < enemy.position.X && this.position.X > enemy.position.X
                 || this.position.X +base.frame.Width + range > enemy.position.X && this.position.X < enemy.position.X)
             {
                 attacking = true;

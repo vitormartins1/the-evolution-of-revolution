@@ -26,6 +26,11 @@ namespace TheEvolutionOfRevolution
             this.position = position;
             this.size = size;
         }
+
+        public virtual void Draw()
+        {
+
+        }
         
         public virtual void Draw(SpriteBatch spriteBatch)
         {

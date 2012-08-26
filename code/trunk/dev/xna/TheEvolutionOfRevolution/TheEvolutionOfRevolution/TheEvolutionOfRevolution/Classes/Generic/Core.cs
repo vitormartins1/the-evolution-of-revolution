@@ -33,7 +33,7 @@ namespace Foxpaw.Game
             {
                 if (i > 60)
                 {
-                    CharacterManager.AddCharacter(new Robespierre(content.Load<Texture2D>("Images//soldier_2")));
+                    CharacterManager.AddCharacter(new JeanPaulMarat(content.Load<Texture2D>("Images//soldier_1")));
                     CharacterManager.AddCharacter(new LuizXVI(content.Load<Texture2D>("Sprite")));
                     i = 0;
                 }
