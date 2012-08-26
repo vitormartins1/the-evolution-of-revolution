@@ -16,7 +16,7 @@ namespace TheEvolutionOfRevolution
         public float velocity;
         public bool attacking;
 
-        private Character attackedEnemy;
+        protected Character attackedEnemy;
 
         protected Character(int ID, Type type, Vector2 position, Facing facing, State state)
             : base(position, facing, state)
@@ -33,6 +33,7 @@ namespace TheEvolutionOfRevolution
 
         public override void Update()
         {
+
             if (this.position.X < 0 || this.position.X > 800) { this.hp = 0; }
 
             if (attackedEnemy != null)

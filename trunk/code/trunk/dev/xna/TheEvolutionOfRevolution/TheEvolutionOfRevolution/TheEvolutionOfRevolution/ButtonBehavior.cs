@@ -5,21 +5,23 @@ namespace TheEvolutionOfRevolution
 {
     class ButtonBehavior
     {
-        MouseState currentState;
+        public MouseState currentState;
         bool pressing = false;
-        public bool PRESSED = false;
+        public bool PRESSED, DRAGGING;
 
         public void CheckButton(Rectangle rectangle)
         {
+            PRESSED = false;
+            DRAGGING = false;
+
             currentState = Mouse.GetState();
 
             if (rectangle.Contains(new Point(currentState.X, currentState.Y)))
             {
-                PRESSED = false;
-
                 if (currentState.LeftButton == ButtonState.Pressed)
                 {
                     pressing = true;
+                    DRAGGING = true;
                 }
                 else
                 {
@@ -27,11 +29,7 @@ namespace TheEvolutionOfRevolution
                     pressing = false;
                 }
             }
-            else
-            {
-                pressing = false;
-                PRESSED = false;
-            }
+            else { pressing = false; }
         }
     }
 }
