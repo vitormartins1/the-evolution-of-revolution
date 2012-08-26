@@ -107,6 +107,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ButtonBehavior.cs" />
     <Compile Include="Classes\2D\Animation2D.cs" />
     <Compile Include="Classes\2D\GameObject2D.cs" />
     <Compile Include="Classes\2D\Particle2D.cs" />

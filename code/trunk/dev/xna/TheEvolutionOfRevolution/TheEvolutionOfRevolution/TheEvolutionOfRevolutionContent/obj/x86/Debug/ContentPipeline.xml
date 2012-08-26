@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Sprite.xnb</Output>
-      <Time>2012-08-25T10:46:06.2756371-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Sprite.xnb</Output>
+      <Time>2012-08-25T10:40:09.6101615-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bg_game.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_game.xnb</Output>
-      <Time>2012-08-25T13:27:24.2651003-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_game.xnb</Output>
+      <Time>2012-08-25T14:51:15.5456965-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bg_gameover.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_gameover.xnb</Output>
-      <Time>2012-08-25T13:27:24.2671005-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_gameover.xnb</Output>
+      <Time>2012-08-25T14:51:15.5096945-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bg_opening.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_opening.xnb</Output>
-      <Time>2012-08-25T13:27:24.2701006-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_opening.xnb</Output>
+      <Time>2012-08-25T14:51:15.5726981-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bastilha.jpg</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bastilha.xnb</Output>
-      <Time>2012-08-25T19:57:11.6957849-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bastilha.xnb</Output>
+      <Time>2012-08-25T18:46:26.0957738-03:00</Time>
     </Item>
     <Item>
       <Source>Images\russia.jpg</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\russia.xnb</Output>
-      <Time>2012-08-26T00:41:44.1005805-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\russia.xnb</Output>
+      <Time>2012-08-25T23:10:57.6032385-03:00</Time>
     </Item>
     <Item>
       <Source>Images\soldier_1.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_1.xnb</Output>
-      <Time>2012-08-26T00:41:44.0955802-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_1.xnb</Output>
+      <Time>2012-08-26T00:28:33.0135127-03:00</Time>
     </Item>
     <Item>
       <Source>Images\soldier_2.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_2.xnb</Output>
-      <Time>2012-08-26T00:41:44.0975803-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_2.xnb</Output>
+      <Time>2012-08-26T00:28:33.0215132-03:00</Time>
     </Item>
     <Item>
       <Source>cat_1.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\cat_1.xnb</Output>
-      <Time>2012-08-26T00:41:48.9398573-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\cat_1.xnb</Output>
+      <Time>2012-08-25T23:47:49.3367424-03:00</Time>
     </Item>
     <Item>
       <Source>Images\sprite_3.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_3.xnb</Output>
-      <Time>2012-08-26T00:41:48.4938318-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_3.xnb</Output>
+      <Time>2012-08-26T00:28:33.0595153-03:00</Time>
     </Item>
     <Item>
       <Source>Images\sprite_4.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_4.xnb</Output>
-      <Time>2012-08-26T02:55:07.270789-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_4.xnb</Output>
+      <Time>2012-08-26T00:28:33.0645156-03:00</Time>
     </Item>
     <Item>
       <Source>Images\sprite_5.png</Source>
@@ -106,17 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_5.xnb</Output>
-      <Time>2012-08-26T00:41:48.4998321-03:00</Time>
-    </Item>
-    <Item>
-      <Source>Images\stone_moon.png</Source>
-      <Name>Images\stone_moon</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\stone_moon.xnb</Output>
-      <Time>2012-08-26T01:36:49.8621126-03:00</Time>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_5.xnb</Output>
+      <Time>2012-08-26T00:28:33.0685159-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -124,39 +115,39 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolutionContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolutionContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\kira\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolutionContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolutionContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-03:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T12:41:18-03:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-03:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-03:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T12:41:18-03:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T12:41:18-03:00</Value>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T11:41:18-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-07-06T19:53:20.4756515-03:00</Value>
+        <Value>2011-12-23T18:55:46.8203904-02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
