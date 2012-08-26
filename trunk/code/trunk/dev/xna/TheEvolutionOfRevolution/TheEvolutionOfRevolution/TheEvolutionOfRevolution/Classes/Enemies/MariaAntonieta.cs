@@ -19,10 +19,10 @@ namespace TheEvolutionOfRevolution
         public MariaAntonieta(Texture2D texture)
             : base(0,Type.Enemy, Vector2.Zero, Facing.East, State.Walking)
         {
-            base.hp = 70;
-            base.attack = 0.8f;
-            base.range = 0;
-            base.velocity = 0.37f;
+            base.hp = CharacterBalance.mariaHP;
+            base.attack = CharacterBalance.mariaAttack;
+            base.range = CharacterBalance.mariaRange;
+            base.velocity = CharacterBalance.mariaVelocity;
 
             Point frameCount = new Point(13, 2);
             List<Point> loopList = new List<Point>()

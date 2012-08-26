@@ -38,27 +38,32 @@ namespace TheEvolutionOfRevolution
             btMariaAntonieta = new Button(new Vector2(28 - 17, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_mantonieta"),
                 content.Load<Texture2D>("Botoes//bthover_mantonieta"));
+            btMariaAntonieta.displayer.SetString("Maria Antonieta", CharacterBalance.mariaAttack, CharacterBalance.mariaVelocity, CharacterBalance.mariaHP);
 
             btLuizXVI = new Button(new Vector2(78 - 17, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_luizxvi"),
                 content.Load<Texture2D>("Botoes//bthover_luizxvi"));
+            btLuizXVI.displayer.SetString("Luiz XVI", CharacterBalance.luizAttack, CharacterBalance.luizVelocity, CharacterBalance.luizHP);
 
             btSoldado_01 = new Button(new Vector2(128 - 17, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_soldado_01"),
                 content.Load<Texture2D>("Botoes//bthover_soldado_01"));
+            btSoldado_01.displayer.SetString("Soldado", CharacterBalance.soldado_01Attack, CharacterBalance.soldado_01Velocity, CharacterBalance.soldado_01HP);
 
             btGeorgesDanton = new Button(new Vector2(178+470, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_danton"),
                 content.Load<Texture2D>("Botoes//bthover_danton"));
+            btGeorgesDanton.displayer.SetString("Georges Danton", CharacterBalance.dantonAttack, CharacterBalance.dantonVelocity, CharacterBalance.dantonHP);
 
             btJeanPaulMarat = new Button(new Vector2(228+470, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_marat"),
                 content.Load<Texture2D>("Botoes//bthover_marat"));
+            btJeanPaulMarat.displayer.SetString("Marat", CharacterBalance.maratAttack, CharacterBalance.maratVelocity, CharacterBalance.maratHP);
 
             btRobespierre = new Button(new Vector2(278 + 470, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_robespierre"),
                 content.Load<Texture2D>("Botoes//bthover_robespierre"));
-
+            btRobespierre.displayer.SetString("Robespierre", CharacterBalance.robespierreAttack, CharacterBalance.robespierreVelocity, CharacterBalance.robespierreHP);
             
         }
 
@@ -98,18 +103,18 @@ namespace TheEvolutionOfRevolution
             btMariaAntonieta.Update();
             if (btMariaAntonieta.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(0.7f, 1);
+                barUser.SetLoading(CharacterBalance.mariaDelay, 1);
             }
             if (barUser.loadead && barUser.ID == 1)
             {
-                CharacterManager.AddCharacter(new MariaAntonieta(SceneManager.content.Load<Texture2D>("Images//sprite_4")));
+                CharacterManager.AddCharacter(new MariaAntonieta(SceneManager.content.Load<Texture2D>("Images//mantonieta")));
                 barUser.ResetBar();
             }
 
             btLuizXVI.Update();
             if (btLuizXVI.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(0.7f, 2);
+                barUser.SetLoading(CharacterBalance.luizDelay, 2);
             }
             if (barUser.loadead && barUser.ID == 2)
             {
@@ -120,7 +125,7 @@ namespace TheEvolutionOfRevolution
             btSoldado_01.Update();
             if (btSoldado_01.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(1.2f, 6);
+                barUser.SetLoading(CharacterBalance.soldado_01Delay, 6);
             }
             if (barUser.loadead && barUser.ID == 6)
             {
@@ -131,7 +136,7 @@ namespace TheEvolutionOfRevolution
             btGeorgesDanton.Update();
             if (btGeorgesDanton.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(0.55f, 3);
+                barUser.SetLoading(CharacterBalance.dantonDelay, 3);
             }
             if (barUser.loadead && barUser.ID == 3)
             {
@@ -142,7 +147,7 @@ namespace TheEvolutionOfRevolution
             btJeanPaulMarat.Update();
             if (btJeanPaulMarat.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(1.0f, 4);
+                barUser.SetLoading(CharacterBalance.maratDelay, 4);
             }
             if (barUser.loadead && barUser.ID == 4)
             {
@@ -153,7 +158,7 @@ namespace TheEvolutionOfRevolution
             btRobespierre.Update();
             if (btRobespierre.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(1.0f, 5);
+                barUser.SetLoading(CharacterBalance.robespierreDelay, 5);
             }
             if (barUser.loadead && barUser.ID == 5)
             {

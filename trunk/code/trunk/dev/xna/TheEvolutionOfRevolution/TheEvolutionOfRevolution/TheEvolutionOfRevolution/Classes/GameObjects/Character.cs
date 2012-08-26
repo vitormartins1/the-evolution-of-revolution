@@ -9,7 +9,7 @@ namespace TheEvolutionOfRevolution
 {
     abstract class Character : GameObject
     {
-        public int range;
+        public float range;
         public float hp;
         public float attack;
         public int ID;

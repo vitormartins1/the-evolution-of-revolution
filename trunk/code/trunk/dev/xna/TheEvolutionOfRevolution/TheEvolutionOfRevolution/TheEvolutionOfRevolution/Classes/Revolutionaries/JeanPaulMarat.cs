@@ -28,10 +28,10 @@ namespace TheEvolutionOfRevolution
         public JeanPaulMarat(Texture2D texture)
             : base(1,Type.Revolutionary, Vector2.Zero, Facing.West, State.Walking)
         {
-            base.hp = 195;
-            base.attack = 1.5f;
-            base.range = 0;
-            base.velocity = 0.30f;
+            base.hp = CharacterBalance.maratHP;
+            base.attack = CharacterBalance.maratAttack;
+            base.range = CharacterBalance.maratRange;
+            base.velocity = CharacterBalance.maratVelocity;
 
             Point frameCount = new Point(13, 2);
             List<Point> loopList = new List<Point>()

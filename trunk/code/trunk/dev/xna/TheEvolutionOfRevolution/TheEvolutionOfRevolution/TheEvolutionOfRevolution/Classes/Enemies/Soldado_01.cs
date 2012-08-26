@@ -9,10 +9,10 @@ namespace TheEvolutionOfRevolution
         public Soldado_01(Texture2D texture)
             : base(0,Type.Enemy, Vector2.Zero, Facing.East, State.Walking)
         {
-            base.hp = 100;
-            base.attack = 1f;
-            base.range = 0;
-            base.velocity = 0.4f;
+            base.hp = CharacterBalance.soldado_01HP;
+            base.attack = CharacterBalance.soldado_01Attack;
+            base.range = CharacterBalance.soldado_01Range;
+            base.velocity = CharacterBalance.soldado_01Velocity;
 
             Point frameCount = new Point(13, 2);
             List<Point> loopList = new List<Point>()
