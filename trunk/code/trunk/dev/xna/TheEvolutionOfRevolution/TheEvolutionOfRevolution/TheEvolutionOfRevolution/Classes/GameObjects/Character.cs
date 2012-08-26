@@ -16,6 +16,7 @@ namespace TheEvolutionOfRevolution
         public float velocity;
         public bool attacking;
         public bool dead = false;
+        public bool beingAttacked = false;
 
         protected Character attackedEnemy;
 
@@ -27,9 +28,9 @@ namespace TheEvolutionOfRevolution
             System.Random random = new System.Random();
 
             if (ID == 0)
-                base.position = new Vector2(0, 500 + (random.Next(0, 50) - random.Next(0, 50)));
+                base.position = new Vector2(0, 300 + random.Next(0, 250));
             else
-                base.position = new Vector2(800, 500 + (random.Next(0, 50) - random.Next(0, 50)));
+                base.position = new Vector2(800, 300 + random.Next(0, 250));
         }
 
         int i = 0;
@@ -41,11 +42,14 @@ namespace TheEvolutionOfRevolution
 
                 if (attackedEnemy != null)
                 {
+                    if (attackedEnemy.position.Y - 5 > position.Y) { position.Y++; }
+                    else if (attackedEnemy.position.Y + 5 < position.Y) { position.Y--; }
+
                     attackedEnemy.hp -= attack;
                     state = State.Attacking;
-                    if (attackedEnemy.hp <= 0) { attackedEnemy = null; }
+                    if (attackedEnemy.hp <= 0) { attackedEnemy = null; beingAttacked = false; }
                 }
-                else { attacking = false; state = State.Walking; }
+                else { attacking = false; beingAttacked = false; state = State.Walking; }
             }
             else
             {
@@ -66,11 +70,15 @@ namespace TheEvolutionOfRevolution
 
         public void TryAttack(Character enemy)
         {
-            if (this.position.X -base.frame.Width - range < enemy.position.X && this.position.X > enemy.position.X
-                || this.position.X +base.frame.Width + range > enemy.position.X && this.position.X < enemy.position.X)
+            if (!enemy.beingAttacked)
             {
-                attacking = true;
-                attackedEnemy = enemy;
+                if (this.position.X - base.frame.Width - range < enemy.position.X && this.position.X > enemy.position.X
+                    || this.position.X + base.frame.Width + range > enemy.position.X && this.position.X < enemy.position.X)
+                {
+                    attacking = true;
+                    attackedEnemy = enemy;
+                    attackedEnemy.beingAttacked = true;
+                }
             }
         }
 
