@@ -33,10 +33,11 @@ namespace TheEvolutionOfRevolution
         public GeorgesDanton(Texture2D texture)
             : base(1,Type.Revolutionary, Vector2.Zero, Facing.West, State.Walking)
         {
-            base.hp = 50;
-            base.attack = 0.33f;
-            base.range = 200;
-            base.velocity =  0.32f;
+            base.hp = CharacterBalance.dantonHP;
+            base.attack = CharacterBalance.dantonAttack;
+            base.range = CharacterBalance.dantonRange;
+            base.velocity = CharacterBalance.dantonVelocity;
+
             t = SceneManager.content.Load<Texture2D>("Images//stone_moon");
             Point frameCount = new Point(13, 2);
             List<Point> loopList = new List<Point>()

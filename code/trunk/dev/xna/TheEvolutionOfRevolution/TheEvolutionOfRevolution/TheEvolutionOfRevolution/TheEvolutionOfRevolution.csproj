@@ -120,6 +120,8 @@
     <Compile Include="Classes\Enemies\LuizXVI.cs" />
     <Compile Include="Classes\Enemies\MariaAntonieta.cs" />
     <Compile Include="Classes\Enemies\Soldado_01.cs" />
+    <Compile Include="Classes\Generic\CharacterBalance.cs" />
+    <Compile Include="Classes\Generic\InfoDisplayer.cs" />
     <Compile Include="Classes\Scenes\GameLevel.cs" />
     <Compile Include="Classes\Scenes\GameOver.cs" />
     <Compile Include="Classes\GameObjects\Button.cs" />

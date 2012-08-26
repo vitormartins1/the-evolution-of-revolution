@@ -27,10 +27,10 @@ namespace TheEvolutionOfRevolution
         public Robespierre(Texture2D texture)
             : base(1,Type.Revolutionary, Vector2.Zero, Facing.West, State.Walking)
         {
-            base.hp = 125;
-            base.attack = 2.5f;
-            base.range = 5;
-            base.velocity = 0.46f;
+            base.hp = CharacterBalance.robespierreHP;
+            base.attack = CharacterBalance.robespierreAttack;
+            base.range = CharacterBalance.robespierreRange;
+            base.velocity = CharacterBalance.robespierreVelocity;
 
             Point frameCount = new Point(13, 2);
             List<Point> loopList = new List<Point>()

@@ -20,10 +20,10 @@ namespace TheEvolutionOfRevolution
         public LuizXVI(Texture2D texture)
             : base(0,Type.Enemy, Vector2.Zero, Facing.East, State.Walking)
         {
-            base.hp = 210;
-            base.attack = 1;
-            base.range = 5;
-            base.velocity = 0.28f;
+            base.hp = CharacterBalance.luizHP;
+            base.attack = CharacterBalance.luizAttack;
+            base.range = CharacterBalance.luizRange;
+            base.velocity = CharacterBalance.luizVelocity;
 
             Point frameCount = new Point(13, 2);
             List<Point> loopList = new List<Point>()
