@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using Foxpaw.Game2D;
 
 #region Bibliografia
 /* Georges Jacques Danton (1759-1794) foi um advogado e politico
@@ -24,14 +25,19 @@ namespace TheEvolutionOfRevolution
 {
     class GeorgesDanton : Character
     {
+        int time = 55;
+        Texture2D t;
+
+        List<TestProjectile> projectiles;
+
         public GeorgesDanton(Texture2D texture)
             : base(1,Type.Revolutionary, Vector2.Zero, Facing.West, State.Walking)
         {
-            base.hp = 75;
-            base.attack = 1;
-            base.range = 500;
+            base.hp = 45;
+            base.attack = 0.23f;
+            base.range = 200;
             base.velocity = 0.85f;
-
+            t = SceneManager.content.Load<Texture2D>("Images//stone_moon");
             Point frameCount = new Point(6, 4);
             List<Point> loopList = new List<Point>()
             {
@@ -39,20 +45,54 @@ namespace TheEvolutionOfRevolution
                 new Point(1, 5)
             };
 
+            projectiles = new List<TestProjectile>();
+
             base.Initialize(texture, frameCount, loopList);
         }
-
+        
         public override void Update()
         {
             if (!attacking)
             {
                 position.X -= base.velocity;
             }
+            
+            if (attacking)
+            {
+                time++;
+                if (time >75)
+                {
+                    projectiles.Add(new TestProjectile(t, base.position, new Vector2(0,0)));
+                    time = 0;
+                }
+
+                foreach (TestProjectile p in projectiles)
+	            {
+                    p.Update();
+                    if (p.position.Y <= position.Y - 20)
+                    {
+                        //projectiles.Remove(p);
+                    }
+	            }
+            }
+            else if (projectiles.Count > 0)
+            {
+                foreach (TestProjectile p in projectiles)
+                {
+                    p.Update();
+                }
+            }
+
             base.Update();
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
+            foreach (TestProjectile p in projectiles)
+            {
+                p.Draw(spriteBatch);
+            }
+
             base.Draw(spriteBatch);
         }
     }
