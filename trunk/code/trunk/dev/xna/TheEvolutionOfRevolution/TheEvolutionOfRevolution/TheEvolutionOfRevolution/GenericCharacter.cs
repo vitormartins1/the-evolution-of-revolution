@@ -12,7 +12,7 @@ namespace TheEvolutionOfRevolution
     class GenericCharacter : GameObject
     {
         public GenericCharacter(Texture2D texture, Vector2 position) 
-            : base(position, Facing.North, State.Iddle)
+            : base(position, Facing.East, State.Walking)
         {
             Point frameCount = new Point(6, 4);
             List<Point> loopList = new List<Point>()
@@ -27,7 +27,7 @@ namespace TheEvolutionOfRevolution
         public override void Update()
         {
             if (Keyboard.GetState().IsKeyDown(Keys.Right)) { position.X++; state = State.Walking; facing = Facing.East; }
-            else { state = State.Iddle; }
+            else { state = State.Walking; }
 
             base.Update();
         }
