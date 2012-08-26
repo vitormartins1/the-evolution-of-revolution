@@ -13,6 +13,7 @@ namespace TheEvolutionOfRevolution
         public float hp;
         public float attack;
         public int ID;
+        public float velocity;
         public bool attacking;
 
         private Character attackedEnemy;
