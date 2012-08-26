@@ -30,7 +30,7 @@ namespace TheEvolutionOfRevolution
             //this.target = target;
             gravidade = 0.05f;
             angulo = 40 * (float)Math.PI / 180; // Convertando o angulo em graus para radianos
-            velocidade = 3.8f;
+            velocidade = 3.0f;
             vetor = new Vector2();
             vetor.X = velocidade * (float)Math.Cos(angulo);
             vetor.Y = velocidade * (float)-Math.Sin(angulo);
