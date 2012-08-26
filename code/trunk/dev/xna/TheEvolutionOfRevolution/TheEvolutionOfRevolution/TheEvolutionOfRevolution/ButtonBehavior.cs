@@ -7,7 +7,7 @@ namespace TheEvolutionOfRevolution
     {
         public MouseState currentState;
         bool pressing = false;
-        public bool PRESSED, DRAGGING;
+        public bool PRESSED, DRAGGING, HOVERING;
 
         public void CheckButton(Rectangle rectangle)
         {
@@ -18,6 +18,7 @@ namespace TheEvolutionOfRevolution
 
             if (rectangle.Contains(new Point(currentState.X, currentState.Y)))
             {
+                HOVERING = true;
                 if (currentState.LeftButton == ButtonState.Pressed)
                 {
                     pressing = true;
@@ -29,7 +30,7 @@ namespace TheEvolutionOfRevolution
                     pressing = false;
                 }
             }
-            else { pressing = false; }
+            else { pressing = false; HOVERING = false; }
         }
     }
 }

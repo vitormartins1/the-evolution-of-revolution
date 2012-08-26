@@ -121,6 +121,7 @@
     <Compile Include="Classes\Enemies\TestEnemy.cs" />
     <Compile Include="Classes\GameLevel.cs" />
     <Compile Include="Classes\GameOver.cs" />
+    <Compile Include="Classes\Generic\Button.cs" />
     <Compile Include="Classes\Generic\Core.cs" />
     <Compile Include="Classes\Generic\FrameRateDisplayer.cs" />
     <Compile Include="Classes\Generic\ParticleEmitter.cs" />
