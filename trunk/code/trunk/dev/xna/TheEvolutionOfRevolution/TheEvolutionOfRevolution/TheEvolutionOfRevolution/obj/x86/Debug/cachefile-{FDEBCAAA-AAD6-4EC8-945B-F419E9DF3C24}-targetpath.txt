@@ -22,3 +22,6 @@ Content\Botoes\bt_luizxvi.xnb
 Content\Botoes\bt_mantonieta.xnb
 Content\Botoes\bt_marat.xnb
 Content\Botoes\bt_robespierre.xnb
+Content\Bar\bar1.xnb
+Content\Bar\bar2.xnb
+Content\Bar\bar3.xnb
