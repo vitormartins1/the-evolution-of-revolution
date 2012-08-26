@@ -30,9 +30,9 @@ namespace Foxpaw.Game
         int i = 0;
         public void Update(GameTime gameTime) 
         {
-            b.CheckButton(new Rectangle(0, 0, 800, 600));
-            if (b.PRESSED) { System.Console.WriteLine("PRESSED"); }
-            else if (b.DRAGGING) { System.Console.WriteLine("DRAGGING"); }
+            //b.CheckButton(new Rectangle(0, 0, 800, 600));
+            //if (b.PRESSED) { System.Console.WriteLine("PRESSED"); }
+            //else if (b.DRAGGING) { System.Console.WriteLine("DRAGGING"); }
 
             i++;
 

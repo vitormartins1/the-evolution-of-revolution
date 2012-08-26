@@ -69,12 +69,12 @@ namespace TheEvolutionOfRevolution
                     time = 0;
                 }
 
-                foreach (TestProjectile p in projectiles)
+                for (int i = 0; i < projectiles.Count;i++)
 	            {
-                    p.Update();
-                    if (p.position.Y <= position.Y - 20)
+                    projectiles[i].Update();
+                    if (projectiles[i].position.Y > position.Y)
                     {
-                        //projectiles.Remove(p);
+                        projectiles.RemoveAt(i);
                     }
 	            }
             }
