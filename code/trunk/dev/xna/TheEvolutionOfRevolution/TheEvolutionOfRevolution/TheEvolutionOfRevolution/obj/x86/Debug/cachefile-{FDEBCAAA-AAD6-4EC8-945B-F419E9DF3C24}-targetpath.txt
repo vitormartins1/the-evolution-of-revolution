@@ -10,3 +10,4 @@ Content\cat_1.xnb
 Content\Images\sprite_3.xnb
 Content\Images\sprite_4.xnb
 Content\Images\sprite_5.xnb
+Content\Images\stone_moon.xnb
