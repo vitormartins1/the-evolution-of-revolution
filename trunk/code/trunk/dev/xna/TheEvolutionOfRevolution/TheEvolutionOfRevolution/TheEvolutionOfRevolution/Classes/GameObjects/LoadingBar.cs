@@ -30,8 +30,11 @@ namespace TheEvolutionOfRevolution
             this.bar = SceneManager.content.Load<Texture2D>("Bar//bar1");
             this.upBar = SceneManager.content.Load<Texture2D>("Bar//bar2");
 
-            size = new Point(upBar.Width, upBar.Height);
-            barSize = new Vector2(0, upBar.Height);
+            //size = new Point(upBar.Width, upBar.Height);
+            //barSize = new Vector2(0, upBar.Height);
+
+            size = new Point(140, 12);
+            barSize = new Vector2(0, size.Y);
 
             this.position = position;
 

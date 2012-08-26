@@ -244,6 +244,24 @@
       <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Bar\bar3.xnb</Output>
       <Time>2012-08-26T14:53:00.763-03:00</Time>
     </Item>
+    <Item>
+      <Source>Botoes\bthover_soldado_01.png</Source>
+      <Name>Botoes\bthover_soldado_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_soldado_01.xnb</Output>
+      <Time>2012-08-26T16:49:28.071-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Botoes\bt_soldado_01.png</Source>
+      <Name>Botoes\bt_soldado_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_soldado_01.xnb</Output>
+      <Time>2012-08-26T16:49:28.068-03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

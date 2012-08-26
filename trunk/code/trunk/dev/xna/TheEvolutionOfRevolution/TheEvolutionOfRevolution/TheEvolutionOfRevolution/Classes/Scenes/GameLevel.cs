@@ -18,6 +18,7 @@ namespace TheEvolutionOfRevolution
 
         Button btMariaAntonieta;
         Button btLuizXVI;
+        Button btSoldado_01;
 
         Button btRobespierre;
         Button btJeanPaulMarat;
@@ -32,27 +33,33 @@ namespace TheEvolutionOfRevolution
             base.LoadContent(content);
             this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//russia"), new Point(800,600));
 
-            barUser = new LoadingBar(new Vector2(10, 60));
+            barUser = new LoadingBar(new Vector2(648, 55));
 
-            btMariaAntonieta = new Button(new Vector2(28, 9), new Point(40, 40),
+            btMariaAntonieta = new Button(new Vector2(28 - 17, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_mantonieta"),
                 content.Load<Texture2D>("Botoes//bthover_mantonieta"));
 
-            btLuizXVI = new Button(new Vector2(78, 9), new Point(40, 40),
+            btLuizXVI = new Button(new Vector2(78 - 17, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_luizxvi"),
                 content.Load<Texture2D>("Botoes//bthover_luizxvi"));
 
-            btGeorgesDanton = new Button(new Vector2(128, 9), new Point(40, 40),
+            btSoldado_01 = new Button(new Vector2(128 - 17, 9), new Point(40, 40),
+                content.Load<Texture2D>("Botoes//bt_soldado_01"),
+                content.Load<Texture2D>("Botoes//bthover_soldado_01"));
+
+            btGeorgesDanton = new Button(new Vector2(178+470, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_danton"),
                 content.Load<Texture2D>("Botoes//bthover_danton"));
 
-            btJeanPaulMarat = new Button(new Vector2(178, 9), new Point(40, 40),
+            btJeanPaulMarat = new Button(new Vector2(228+470, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_marat"),
                 content.Load<Texture2D>("Botoes//bthover_marat"));
 
-            btRobespierre = new Button(new Vector2(228, 9), new Point(40, 40),
+            btRobespierre = new Button(new Vector2(278 + 470, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_robespierre"),
                 content.Load<Texture2D>("Botoes//bthover_robespierre"));
+
+            
         }
 
         public override void Update(GameTime gameTime)
@@ -77,6 +84,7 @@ namespace TheEvolutionOfRevolution
 
             btMariaAntonieta.Draw(spritebatch);
             btLuizXVI.Draw(spritebatch);
+            btSoldado_01.Draw(spritebatch);
 
             btGeorgesDanton.Draw(spritebatch);
             btJeanPaulMarat.Draw(spritebatch);
@@ -101,7 +109,7 @@ namespace TheEvolutionOfRevolution
             btLuizXVI.Update();
             if (btLuizXVI.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(100, 2);
+                barUser.SetLoading(0.7f, 2);
             }
             if (barUser.loadead && barUser.ID == 2)
             {
@@ -109,10 +117,21 @@ namespace TheEvolutionOfRevolution
                 barUser.ResetBar();
             }
 
+            btSoldado_01.Update();
+            if (btSoldado_01.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
+            {
+                barUser.SetLoading(1.2f, 6);
+            }
+            if (barUser.loadead && barUser.ID == 6)
+            {
+                CharacterManager.AddCharacter(new Soldado_01(SceneManager.content.Load<Texture2D>("SpriteT")));
+                barUser.ResetBar();
+            }
+
             btGeorgesDanton.Update();
             if (btGeorgesDanton.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(0.9f, 3);
+                barUser.SetLoading(0.55f, 3);
             }
             if (barUser.loadead && barUser.ID == 3)
             {
@@ -134,7 +153,7 @@ namespace TheEvolutionOfRevolution
             btRobespierre.Update();
             if (btRobespierre.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(100, 5);
+                barUser.SetLoading(1.0f, 5);
             }
             if (barUser.loadead && barUser.ID == 5)
             {
