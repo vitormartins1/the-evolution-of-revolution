@@ -46,6 +46,33 @@
       <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bastilha.xnb</Output>
       <Time>2012-08-25T18:46:26.0957738-03:00</Time>
     </Item>
+    <Item>
+      <Source>Images\russia.jpg</Source>
+      <Name>Images\russia</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\russia.xnb</Output>
+      <Time>2012-08-25T22:41:32.1662-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\soldier_1.png</Source>
+      <Name>Images\soldier_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_1.xnb</Output>
+      <Time>2012-08-25T22:50:02.0182-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\soldier_2.png</Source>
+      <Name>Images\soldier_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_2.xnb</Output>
+      <Time>2012-08-25T22:50:02.0222-03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

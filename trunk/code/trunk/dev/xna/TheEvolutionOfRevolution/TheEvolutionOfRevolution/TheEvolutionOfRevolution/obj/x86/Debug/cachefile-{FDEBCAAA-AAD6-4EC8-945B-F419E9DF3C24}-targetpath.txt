@@ -3,3 +3,6 @@ Content\Images\bg_game.xnb
 Content\Images\bg_gameover.xnb
 Content\Images\bg_opening.xnb
 Content\Images\bastilha.xnb
+Content\Images\russia.xnb
+Content\Images\soldier_1.xnb
+Content\Images\soldier_2.xnb
