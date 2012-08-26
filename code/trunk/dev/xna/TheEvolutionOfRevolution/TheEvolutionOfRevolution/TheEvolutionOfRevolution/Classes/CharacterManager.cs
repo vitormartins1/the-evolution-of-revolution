@@ -14,12 +14,26 @@ namespace TheEvolutionOfRevolution
                 characterList.Add(character);
             }
 
+            private static void BubbleSort()
+            {
+                for (int i = characterList.Count - 1; i > 0; i--)
+                {
+                    for (int j = 0; j < i; j++)
+                    {
+                        if (characterList[i].position.Y > characterList[j].position.Y)
+                        {
+                            Character swap = characterList[i];
+                            characterList[i] = characterList[j];
+                            characterList[j] = swap;
+                        }
+                    }
+                }
+            }
+
             public static void Update()
             {
-                if (Microsoft.Xna.Framework.Input.Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Space))
-                {
-                    System.Console.WriteLine("LIST COUNT: " + characterList.Count);
-                }
+                BubbleSort();
+
                 for (int index = 0; index < characterList.Count; index++)
                 {
                     Character character = characterList[index];
@@ -41,9 +55,9 @@ namespace TheEvolutionOfRevolution
                             character.attacking = false;
                         }
                     }
+
                     if (character.hp <= 0) { characterList.Remove(character); }
                     character.Update();
-
                 }
             }
 

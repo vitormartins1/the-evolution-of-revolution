@@ -15,6 +15,7 @@ namespace TheEvolutionOfRevolution
         public int ID;
         public float velocity;
         public bool attacking;
+        public int depth = 0;
 
         private Character attackedEnemy;
 
