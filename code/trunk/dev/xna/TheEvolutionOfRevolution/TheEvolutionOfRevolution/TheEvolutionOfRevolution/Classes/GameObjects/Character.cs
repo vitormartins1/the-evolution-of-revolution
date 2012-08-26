@@ -42,8 +42,8 @@ namespace TheEvolutionOfRevolution
 
                 if (attackedEnemy != null)
                 {
-                    if (attackedEnemy.position.Y - 5 > position.Y) { position.Y++; }
-                    else if (attackedEnemy.position.Y + 5 < position.Y) { position.Y--; }
+                    if (attackedEnemy.position.Y - 5 > position.Y) { position.Y+=1.5f; }
+                    else if (attackedEnemy.position.Y + 5 < position.Y) { position.Y -= 1.5f; }
 
                     attackedEnemy.hp -= attack;
                     state = State.Attacking;
@@ -70,7 +70,7 @@ namespace TheEvolutionOfRevolution
 
         public void TryAttack(Character enemy)
         {
-            if (!enemy.beingAttacked)
+            if (!enemy.beingAttacked && attacking == false)
             {
                 if (this.position.X - base.frame.Width - range < enemy.position.X && this.position.X > enemy.position.X
                     || this.position.X + base.frame.Width + range > enemy.position.X && this.position.X < enemy.position.X)
