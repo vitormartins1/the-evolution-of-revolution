@@ -88,31 +88,59 @@ namespace TheEvolutionOfRevolution
         public void CheckButtons()
         {
             btMariaAntonieta.Update();
-            if (btMariaAntonieta.GetBehavior().PRESSED && !barUser.loading)
+            if (btMariaAntonieta.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(0.7f);
+                barUser.SetLoading(0.7f, 1);
             }
-            if (barUser.loadead)
+            if (barUser.loadead && barUser.ID == 1)
             {
                 CharacterManager.AddCharacter(new MariaAntonieta(SceneManager.content.Load<Texture2D>("Images//sprite_4")));
-                barUser.loadead = false;
+                barUser.ResetBar();
             }
 
             btLuizXVI.Update();
-            if (btLuizXVI.GetBehavior().PRESSED)
+            if (btLuizXVI.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
+            {
+                barUser.SetLoading(0.7f, 2);
+            }
+            if (barUser.loadead && barUser.ID == 2)
+            {
                 CharacterManager.AddCharacter(new LuizXVI(SceneManager.content.Load<Texture2D>("SpriteT")));
+                barUser.ResetBar();
+            }
 
             btGeorgesDanton.Update();
-            if (btGeorgesDanton.GetBehavior().PRESSED)
+            if (btGeorgesDanton.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
+            {
+                barUser.SetLoading(0.9f, 3);
+            }
+            if (barUser.loadead && barUser.ID == 3)
+            {
                 CharacterManager.AddCharacter(new GeorgesDanton(SceneManager.content.Load<Texture2D>("SpriteT")));
+                barUser.ResetBar();
+            }
 
             btJeanPaulMarat.Update();
-            if (btJeanPaulMarat.GetBehavior().PRESSED)
+            if (btJeanPaulMarat.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
+            {
+                barUser.SetLoading(1.0f, 4);
+            }
+            if (barUser.loadead && barUser.ID == 4)
+            {
                 CharacterManager.AddCharacter(new JeanPaulMarat(SceneManager.content.Load<Texture2D>("SpriteT")));
+                barUser.ResetBar();
+            }
 
             btRobespierre.Update();
-            if (btRobespierre.GetBehavior().PRESSED)
+            if (btRobespierre.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
+            {
+                barUser.SetLoading(1.0f, 5);
+            }
+            if (barUser.loadead && barUser.ID == 5)
+            {
                 CharacterManager.AddCharacter(new Robespierre(SceneManager.content.Load<Texture2D>("SpriteT")));
+                barUser.ResetBar();
+            }
         }
     }
 }
