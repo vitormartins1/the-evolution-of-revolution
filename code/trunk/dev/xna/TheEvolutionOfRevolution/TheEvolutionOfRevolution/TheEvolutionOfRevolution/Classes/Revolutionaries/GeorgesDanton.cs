@@ -36,7 +36,7 @@ namespace TheEvolutionOfRevolution
             base.hp = 50;
             base.attack = 0.33f;
             base.range = 200;
-            base.velocity =  0.75f;
+            base.velocity =  0.32f;
             t = SceneManager.content.Load<Texture2D>("Images//stone_moon");
             Point frameCount = new Point(13, 2);
             List<Point> loopList = new List<Point>()
@@ -46,7 +46,6 @@ namespace TheEvolutionOfRevolution
                 new Point(5, 9),
                 new Point(10, 12)
             };
-
 
             projectiles = new List<TestProjectile>();
 

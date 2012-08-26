@@ -19,6 +19,10 @@ namespace TheEvolutionOfRevolution
         Button btMariaAntonieta;
         Button btLuizXVI;
 
+        Button btRobespierre;
+        Button btJeanPaulMarat;
+        Button btGeorgesDanton;
+
         public GameLevel() { }
 
         public override void LoadContent(ContentManager content)
@@ -33,6 +37,18 @@ namespace TheEvolutionOfRevolution
             btLuizXVI = new Button(new Vector2(78, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_luizxvi"),
                 content.Load<Texture2D>("Botoes//bthover_luizxvi"));
+
+            btGeorgesDanton = new Button(new Vector2(128, 9), new Point(40, 40),
+                content.Load<Texture2D>("Botoes//bt_danton"),
+                content.Load<Texture2D>("Botoes//bthover_danton"));
+
+            btJeanPaulMarat = new Button(new Vector2(178, 9), new Point(40, 40),
+                content.Load<Texture2D>("Botoes//bt_marat"),
+                content.Load<Texture2D>("Botoes//bthover_marat"));
+
+            btRobespierre = new Button(new Vector2(228, 9), new Point(40, 40),
+                content.Load<Texture2D>("Botoes//bt_robespierre"),
+                content.Load<Texture2D>("Botoes//bthover_robespierre"));
         }
 
         public override void Update(GameTime gameTime)
@@ -54,6 +70,10 @@ namespace TheEvolutionOfRevolution
             btMariaAntonieta.Draw(spritebatch);
             btLuizXVI.Draw(spritebatch);
 
+            btGeorgesDanton.Draw(spritebatch);
+            btJeanPaulMarat.Draw(spritebatch);
+            btRobespierre.Draw(spritebatch);
+
             base.Draw(spritebatch);
         }
 
@@ -66,6 +86,18 @@ namespace TheEvolutionOfRevolution
             btLuizXVI.Update();
             if (btLuizXVI.GetBehavior().PRESSED)
                 CharacterManager.AddCharacter(new LuizXVI(SceneManager.content.Load<Texture2D>("SpriteT")));
+
+            btGeorgesDanton.Update();
+            if (btGeorgesDanton.GetBehavior().PRESSED)
+                CharacterManager.AddCharacter(new GeorgesDanton(SceneManager.content.Load<Texture2D>("SpriteT")));
+
+            btJeanPaulMarat.Update();
+            if (btJeanPaulMarat.GetBehavior().PRESSED)
+                CharacterManager.AddCharacter(new JeanPaulMarat(SceneManager.content.Load<Texture2D>("SpriteT")));
+
+            btRobespierre.Update();
+            if (btRobespierre.GetBehavior().PRESSED)
+                CharacterManager.AddCharacter(new Robespierre(SceneManager.content.Load<Texture2D>("SpriteT")));
         }
     }
 }

@@ -30,13 +30,15 @@ namespace TheEvolutionOfRevolution
             base.hp = 125;
             base.attack = 2.5f;
             base.range = 0;
-            base.velocity = 1.2f;
+            base.velocity = 0.46f;
 
-            Point frameCount = new Point(6, 4);
+            Point frameCount = new Point(13, 2);
             List<Point> loopList = new List<Point>()
             {
                 Point.Zero,
-                new Point(1, 5)
+                new Point(0, 4),
+                new Point(5, 9),
+                new Point(10, 12)
             };
 
             base.Initialize(texture, frameCount, loopList);
