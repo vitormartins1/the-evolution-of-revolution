@@ -15,6 +15,7 @@ namespace TheEvolutionOfRevolution
         public int ID;
         public float velocity;
         public bool attacking;
+        public bool dead = false;
 
         protected Character attackedEnemy;
 
@@ -31,18 +32,28 @@ namespace TheEvolutionOfRevolution
                 base.position = new Vector2(800, 500 + (random.Next(0, 50) - random.Next(0, 50)));
         }
 
+        int i = 0;
         public override void Update()
         {
-
-            if (this.position.X < 0 || this.position.X > 800) { this.hp = 0; }
-
-            if (attackedEnemy != null)
+            if (hp > 0)
             {
-                attackedEnemy.hp -= attack;
-                 state = State.Attacking;
-                if(attackedEnemy.hp <= 0){attackedEnemy=null;}
+                if (this.position.X < 0 || this.position.X > 800) { this.hp = 0; }
+
+                if (attackedEnemy != null)
+                {
+                    attackedEnemy.hp -= attack;
+                    state = State.Attacking;
+                    if (attackedEnemy.hp <= 0) { attackedEnemy = null; }
+                }
+                else { attacking = false; state = State.Walking; }
             }
-            else { attacking = false; state = State.Walking; }
+            else
+            {
+                state = State.Dead;
+
+                i++;
+                if (i > 25) { dead = true; }
+            }
 
             base.Update();
         }

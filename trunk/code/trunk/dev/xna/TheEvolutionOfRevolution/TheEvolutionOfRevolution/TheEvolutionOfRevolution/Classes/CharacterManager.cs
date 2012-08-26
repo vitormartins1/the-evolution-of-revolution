@@ -56,7 +56,7 @@ namespace TheEvolutionOfRevolution
                     }
                 }
 
-                if (character.hp <= 0) { characterList.Remove(character); }
+                if (character.dead) { characterList.Remove(character); }
                 character.Update();
             }
         }

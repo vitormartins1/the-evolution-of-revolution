@@ -11,12 +11,12 @@ Content\Images\sprite_3.xnb
 Content\Images\sprite_4.xnb
 Content\Images\sprite_5.xnb
 Content\Images\stone_moon.xnb
+Content\SpriteT.xnb
 Content\Botoes\bthover_danton.xnb
 Content\Botoes\bthover_luizxvi.xnb
 Content\Botoes\bthover_mantonieta.xnb
 Content\Botoes\bthover_marat.xnb
 Content\Botoes\bthover_robespierre.xnb
-Content\SpriteT.xnb
 Content\Botoes\bt_danton.xnb
 Content\Botoes\bt_luizxvi.xnb
 Content\Botoes\bt_mantonieta.xnb
