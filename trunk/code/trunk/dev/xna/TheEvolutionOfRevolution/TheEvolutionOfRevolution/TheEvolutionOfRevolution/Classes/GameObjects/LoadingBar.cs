@@ -22,6 +22,8 @@ namespace TheEvolutionOfRevolution
         public bool loadead;
         public float loadingVariation;
 
+        public int ID;
+
         public LoadingBar(Vector2 position)
         {
             this.bgBar = SceneManager.content.Load<Texture2D>("Bar//bar3");
@@ -50,10 +52,11 @@ namespace TheEvolutionOfRevolution
             spriteBatch.Draw(upBar, new Rectangle((int)position.X, (int)position.Y, size.X, size.Y), Color.White);
         }
 
-        public void SetLoading(float variation)
+        public void SetLoading(float variation, int ID)
         {
             loadingVariation = variation;
             loading = true;
+            this.ID = ID;
         }
 
         public void OnLoadingBar()
@@ -68,6 +71,12 @@ namespace TheEvolutionOfRevolution
                     barSize.X = 0;
                 }
             }
+        }
+
+        public void ResetBar()
+        {
+            loadead = false;
+            ID = 0;
         }
     }
 }
