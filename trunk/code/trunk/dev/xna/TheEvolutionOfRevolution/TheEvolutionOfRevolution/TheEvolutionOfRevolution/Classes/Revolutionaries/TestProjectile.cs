@@ -12,5 +12,10 @@ namespace TheEvolutionOfRevolution.Classes.Revolutionaries
         {
             this.target = target;
         }
+
+        public override void Update()
+        {
+
+        }
     }
 }
