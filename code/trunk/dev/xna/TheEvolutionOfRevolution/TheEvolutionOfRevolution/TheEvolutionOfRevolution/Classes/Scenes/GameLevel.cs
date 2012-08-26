@@ -23,12 +23,16 @@ namespace TheEvolutionOfRevolution
         Button btJeanPaulMarat;
         Button btGeorgesDanton;
 
+        LoadingBar barUser;
+
         public GameLevel() { }
 
         public override void LoadContent(ContentManager content)
         {
             base.LoadContent(content);
             this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//russia"), new Point(800,600));
+
+            barUser = new LoadingBar(new Vector2(10, 60));
 
             btMariaAntonieta = new Button(new Vector2(28, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_mantonieta"),
@@ -55,6 +59,8 @@ namespace TheEvolutionOfRevolution
         {
             CheckButtons();
 
+            barUser.Update();
+
             CharacterManager.Update();
 
             base.Update(gameTime);
@@ -66,7 +72,9 @@ namespace TheEvolutionOfRevolution
                 background.Draw(spritebatch);
 
             CharacterManager.Draw(spritebatch);
-            
+
+            barUser.Draw(spritebatch);
+
             btMariaAntonieta.Draw(spritebatch);
             btLuizXVI.Draw(spritebatch);
 
@@ -80,8 +88,15 @@ namespace TheEvolutionOfRevolution
         public void CheckButtons()
         {
             btMariaAntonieta.Update();
-            if (btMariaAntonieta.GetBehavior().PRESSED)
+            if (btMariaAntonieta.GetBehavior().PRESSED && !barUser.loading)
+            {
+                barUser.SetLoading(0.7f);
+            }
+            if (barUser.loadead)
+            {
                 CharacterManager.AddCharacter(new MariaAntonieta(SceneManager.content.Load<Texture2D>("Images//sprite_4")));
+                barUser.loadead = false;
+            }
 
             btLuizXVI.Update();
             if (btLuizXVI.GetBehavior().PRESSED)
