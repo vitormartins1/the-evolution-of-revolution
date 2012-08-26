@@ -25,9 +25,24 @@ namespace TheEvolutionOfRevolution
             btBehavior = new ButtonBehavior();
         }
 
+        public ButtonBehavior GetBehavior()
+        {
+            return btBehavior;
+        }
+
         public void Update()
         {
             btBehavior.CheckButton(new Rectangle((int)position.X, (int)position.Y, size.X, size.Y));
+
+            if (btBehavior.HOVERING)
+                base.image = btHover;
+            else
+                base.image = bt;
+        }
+
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            base.Draw(spriteBatch);
         }
     }
 }

@@ -11,8 +11,6 @@ namespace Foxpaw.Game
     {
         ContentManager content;
 
-        ButtonBehavior b = new ButtonBehavior();
-
         public Core(ContentManager content, GraphicsDevice graphicsDevice, GameWindow window) : base(window)
         {
             this.content = content;
@@ -24,32 +22,10 @@ namespace Foxpaw.Game
         {
             SceneManager.Setup();
             SceneManager.LoadContent(content);
-
         }
 
-        int i = 0;
         public void Update(GameTime gameTime) 
         {
-            //b.CheckButton(new Rectangle(0, 0, 800, 600));
-            //if (b.PRESSED) { System.Console.WriteLine("PRESSED"); }
-            //else if (b.DRAGGING) { System.Console.WriteLine("DRAGGING"); }
-
-            i++;
-
-            if (Microsoft.Xna.Framework.Input.Keyboard.GetState().IsKeyDown(Microsoft.Xna.Framework.Input.Keys.Space))
-            {
-                if (i > 60)
-                {
-                    CharacterManager.AddCharacter(new GeorgesDanton(content.Load<Texture2D>("SpriteT")));
-                    //CharacterManager.AddCharacter(new JeanPaulMarat(content.Load<Texture2D>("Images//soldier_2")));
-
-                    CharacterManager.AddCharacter(new LuizXVI(content.Load<Texture2D>("SpriteT")));
-                    //CharacterManager.AddCharacter(new MariaAntonieta(content.Load<Texture2D>("Images//sprite_4")));
-                    i = 0;
-                }
-            }
-
-            CharacterManager.Update();
             SceneManager.Update(gameTime);
             base.Verify(gameTime);
         }
@@ -57,8 +33,7 @@ namespace Foxpaw.Game
         public void Draw(SpriteBatch spriteBatch) 
         {
             SceneManager.Draw(spriteBatch);
-            CharacterManager.Draw(spriteBatch);
-
+            
             base.Show();
         }
     }

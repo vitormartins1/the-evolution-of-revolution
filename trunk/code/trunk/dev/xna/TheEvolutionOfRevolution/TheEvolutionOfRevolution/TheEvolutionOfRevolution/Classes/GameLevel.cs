@@ -15,7 +15,9 @@ namespace TheEvolutionOfRevolution
     class GameLevel : Scene
     {
         Background background;
-        GenericCharacter genericCharacter;
+
+        Button btMariaAntonieta;
+        Button btLuizXVI;
 
         public GameLevel() { }
 
@@ -23,12 +25,22 @@ namespace TheEvolutionOfRevolution
         {
             base.LoadContent(content);
             this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//russia"), new Point(800,600));
-            //genericCharacter = new GenericCharacter(content.Load<Texture2D>("Sprite"), Vector2.Zero); genericCharacter = new GenericCharacter(content.Load<Texture2D>("Sprite"), Vector2.Zero);
+
+            btMariaAntonieta = new Button(new Vector2(28, 9), new Point(40, 40),
+                content.Load<Texture2D>("Botoes//bt_mantonieta"),
+                content.Load<Texture2D>("Botoes//bthover_mantonieta"));
+
+            btLuizXVI = new Button(new Vector2(78, 9), new Point(40, 40),
+                content.Load<Texture2D>("Botoes//bt_luizxvi"),
+                content.Load<Texture2D>("Botoes//bthover_luizxvi"));
         }
 
         public override void Update(GameTime gameTime)
         {
-            //genericCharacter.Update();
+            CheckButtons();
+
+            CharacterManager.Update();
+
             base.Update(gameTime);
         }
 
@@ -37,9 +49,23 @@ namespace TheEvolutionOfRevolution
             if (background != null)
                 background.Draw(spritebatch);
 
-            //genericCharacter.Draw(spritebatch);
+            CharacterManager.Draw(spritebatch);
+            
+            btMariaAntonieta.Draw(spritebatch);
+            btLuizXVI.Draw(spritebatch);
 
             base.Draw(spritebatch);
+        }
+
+        public void CheckButtons()
+        {
+            btMariaAntonieta.Update();
+            if (btMariaAntonieta.GetBehavior().PRESSED)
+                CharacterManager.AddCharacter(new MariaAntonieta(SceneManager.content.Load<Texture2D>("Images//sprite_4")));
+
+            btLuizXVI.Update();
+            if (btLuizXVI.GetBehavior().PRESSED)
+                CharacterManager.AddCharacter(new LuizXVI(SceneManager.content.Load<Texture2D>("SpriteT")));
         }
     }
 }
