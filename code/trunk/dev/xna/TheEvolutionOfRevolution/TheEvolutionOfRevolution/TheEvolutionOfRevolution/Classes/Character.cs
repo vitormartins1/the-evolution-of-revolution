@@ -39,10 +39,10 @@ namespace TheEvolutionOfRevolution
             if (attackedEnemy != null)
             {
                 attackedEnemy.hp -= attack;
-                // state = State.Attacking;
+                 state = State.Attacking;
                 if(attackedEnemy.hp <= 0){attackedEnemy=null;}
             }
-            else { attacking = false; }
+            else { attacking = false; state = State.Walking; }
 
             base.Update();
         }

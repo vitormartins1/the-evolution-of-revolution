@@ -40,11 +40,11 @@ namespace Foxpaw.Game
             {
                 if (i > 60)
                 {
-                    CharacterManager.AddCharacter(new GeorgesDanton(content.Load<Texture2D>("Images//soldier_1")));
-                    CharacterManager.AddCharacter(new JeanPaulMarat(content.Load<Texture2D>("Images//soldier_2")));
+                    CharacterManager.AddCharacter(new GeorgesDanton(content.Load<Texture2D>("SpriteT")));
+                    //CharacterManager.AddCharacter(new JeanPaulMarat(content.Load<Texture2D>("Images//soldier_2")));
 
-                    CharacterManager.AddCharacter(new LuizXVI(content.Load<Texture2D>("Sprite")));
-                    CharacterManager.AddCharacter(new MariaAntonieta(content.Load<Texture2D>("Images//sprite_4")));
+                    CharacterManager.AddCharacter(new LuizXVI(content.Load<Texture2D>("SpriteT")));
+                    //CharacterManager.AddCharacter(new MariaAntonieta(content.Load<Texture2D>("Images//sprite_4")));
                     i = 0;
                 }
             }

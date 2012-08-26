@@ -25,11 +25,12 @@ namespace TheEvolutionOfRevolution
             base.range = 0;
             base.velocity = 0.5f;
 
-            Point frameCount = new Point(6, 4);
+            Point frameCount = new Point(10, 2);
             List<Point> loopList = new List<Point>()
             {
                 Point.Zero,
-                new Point(1, 5)
+                new Point(0, 4),
+                new Point(5, 9),
             };
 
             base.Initialize(texture, frameCount, loopList);
