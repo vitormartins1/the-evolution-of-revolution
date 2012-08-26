@@ -38,12 +38,13 @@ namespace TheEvolutionOfRevolution
             base.range = 200;
             base.velocity =  0.75f;
             t = SceneManager.content.Load<Texture2D>("Images//stone_moon");
-            Point frameCount = new Point(10, 2);
+            Point frameCount = new Point(13, 2);
             List<Point> loopList = new List<Point>()
             {
                 Point.Zero,
                 new Point(0, 4),
                 new Point(5, 9),
+                new Point(10, 12)
             };
 
 
