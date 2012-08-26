@@ -101,7 +101,7 @@ namespace TheEvolutionOfRevolution
             btLuizXVI.Update();
             if (btLuizXVI.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(0.7f, 2);
+                barUser.SetLoading(100, 2);
             }
             if (barUser.loadead && barUser.ID == 2)
             {
@@ -134,7 +134,7 @@ namespace TheEvolutionOfRevolution
             btRobespierre.Update();
             if (btRobespierre.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
             {
-                barUser.SetLoading(1.0f, 5);
+                barUser.SetLoading(100, 5);
             }
             if (barUser.loadead && barUser.ID == 5)
             {
