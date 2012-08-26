@@ -29,7 +29,7 @@ namespace TheEvolutionOfRevolution
         {
             base.hp = 75;
             base.attack = 1;
-            base.range = 0;
+            base.range = 500;
             base.velocity = 0.85f;
 
             Point frameCount = new Point(6, 4);

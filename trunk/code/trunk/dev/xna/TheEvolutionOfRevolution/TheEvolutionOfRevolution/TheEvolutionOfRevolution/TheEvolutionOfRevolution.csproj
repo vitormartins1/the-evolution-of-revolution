@@ -128,6 +128,7 @@
     <Compile Include="Classes\Revolutionaries\JeanPaulMarat.cs" />
     <Compile Include="Classes\Revolutionaries\RevolutionaryTest.cs" />
     <Compile Include="Classes\Revolutionaries\Robespierre.cs" />
+    <Compile Include="Classes\Revolutionaries\TestProjectile.cs" />
     <Compile Include="Classes\Scene.cs" />
     <Compile Include="Classes\SceneManager.cs" />
     <Compile Include="GenericCharacter.cs" />

@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\russia.xnb</Output>
-      <Time>2012-08-25T22:41:32.1662-03:00</Time>
+      <Time>2012-08-25T23:10:57.6032385-03:00</Time>
     </Item>
     <Item>
       <Source>Images\soldier_1.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_1.xnb</Output>
-      <Time>2012-08-25T22:50:02.0182-03:00</Time>
+      <Time>2012-08-25T23:10:57.5522356-03:00</Time>
     </Item>
     <Item>
       <Source>Images\soldier_2.png</Source>
@@ -71,7 +71,16 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_2.xnb</Output>
-      <Time>2012-08-25T22:50:02.0222-03:00</Time>
+      <Time>2012-08-25T23:10:57.5962381-03:00</Time>
+    </Item>
+    <Item>
+      <Source>cat_1.png</Source>
+      <Name>cat_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\cat_1.xnb</Output>
+      <Time>2012-08-25T23:47:49.3367424-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
