@@ -15,16 +15,16 @@ namespace TheEvolutionOfRevolution
 {
     class TestProjectile : StaticGameObject
     {
-        Character target;
+        //Character target;
 
         //private Vector2 posicao;            // posicao da flecha
         private float angulo;               // angulo de lançamento da flecha
-        private float orientacao;           // orientacao da flecha
+        //private float orientacao;           // orientacao da flecha
         private Vector2 vetor;              // vetor de direcao da flecha
         private float velocidade;           // velocidade
         private float gravidade;            // gravidade
 
-        public TestProjectile(Texture2D image, Vector2 position, Vector2 alvo)
+        public TestProjectile(Texture2D image, Vector2 position)
             : base(position, image, new Point(13, 13))
         {
             //this.target = target;
@@ -45,15 +45,15 @@ namespace TheEvolutionOfRevolution
             // Somando a gravidade em Y
             vetor.Y = vetor.Y + gravidade;
             // Colocando uma resistencia do ar na flecha
-            Vector2 resistenciaAr = new Vector2();
-            resistenciaAr.X = 0.01f * (float)Math.Cos(orientacao);
-            resistenciaAr.Y = 0.01f * (float)-Math.Sin(orientacao);
+            //Vector2 resistenciaAr = new Vector2();
+            //resistenciaAr.X = 0.01f * (float)Math.Cos(orientacao);
+            //resistenciaAr.Y = 0.01f * (float)-Math.Sin(orientacao);
             // Subtraindo a resistencia do ar do nosso vetor direcao
-            vetor.X = vetor.X - resistenciaAr.X;
-            vetor.Y = vetor.Y + resistenciaAr.Y;
+            //vetor.X = vetor.X - resistenciaAr.X;
+            //vetor.Y = vetor.Y + resistenciaAr.Y;
             // Verificando a orientacao da flecha
-            orientacao = (float)Math.Atan2(novaPosicao.Y - base.position.Y,
-                novaPosicao.X - base.position.X);
+            //orientacao = (float)Math.Atan2(novaPosicao.Y - base.position.Y,
+              //  novaPosicao.X - base.position.X);
             // Atribuindo a nova posição a posição da flecha
             base.position = novaPosicao;
         }

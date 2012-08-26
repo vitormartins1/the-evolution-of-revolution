@@ -36,7 +36,7 @@ namespace TheEvolutionOfRevolution
             base.hp = 50;
             base.attack = 0.33f;
             base.range = 200;
-            base.velocity = 0.75f;
+            base.velocity =  0.75f;
             t = SceneManager.content.Load<Texture2D>("Images//stone_moon");
             Point frameCount = new Point(6, 4);
             List<Point> loopList = new List<Point>()
@@ -62,7 +62,10 @@ namespace TheEvolutionOfRevolution
                 time++;
                 if (time >75)
                 {
-                    projectiles.Add(new TestProjectile(t, base.position, new Vector2(0,0)));
+                    if (attackedEnemy != null)
+                    {
+                        projectiles.Add(new TestProjectile(t, base.position));
+                    }
                     time = 0;
                 }
 
