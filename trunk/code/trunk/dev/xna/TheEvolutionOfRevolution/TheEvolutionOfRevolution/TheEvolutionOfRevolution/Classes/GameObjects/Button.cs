@@ -26,7 +26,7 @@ namespace TheEvolutionOfRevolution
             this.btHover = btHover;
             btBehavior = new ButtonBehavior();
             displayer = new InfoDisplayer(SceneManager.content.Load<SpriteFont>("Fonts//font_01"),
-                new Vector2(base.position.X, base.position.Y + base.size.Y + 19),
+                new Vector2(base.position.X, base.position.Y + base.size.Y + 24),
                 Color.Black);//, "Vitor", 76, 76, 45, 100);
         }
 
