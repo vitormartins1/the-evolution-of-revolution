@@ -3,8 +3,6 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 #endregion
 
-using Foxpaw.Game2D;
-
 namespace TheEvolutionOfRevolution
 {
     class LoadingBar
@@ -15,8 +13,8 @@ namespace TheEvolutionOfRevolution
 
         private Vector2 position;
 
-        private Point size;
-        private Vector2 barSize;
+        public Point size;
+        public Vector2 barSize;
 
         public bool loading;
         public bool loadead;

@@ -26,7 +26,6 @@ namespace TheEvolutionOfRevolution
 
         LoadingBar barUser;
 
-
         //
         ComputerBehavior COMPUTER;
         //
@@ -36,6 +35,8 @@ namespace TheEvolutionOfRevolution
         public override void LoadContent(ContentManager content)
         {
             COMPUTER = new ComputerBehavior(content);
+
+            Bar.Initialize();
 
             base.LoadContent(content);
             this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//russia"), new Point(800,600));
@@ -76,6 +77,8 @@ namespace TheEvolutionOfRevolution
 
         public override void Update(GameTime gameTime)
         {
+            Bar.Update();
+
             COMPUTER.Update();
 
             CheckButtons();
@@ -105,6 +108,8 @@ namespace TheEvolutionOfRevolution
             btRobespierre.Draw(spritebatch);
 
             COMPUTER.Draw(spritebatch);
+
+            Bar.Draw(spritebatch);
 
             base.Draw(spritebatch);
         }
