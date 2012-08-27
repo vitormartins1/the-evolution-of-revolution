@@ -71,6 +71,41 @@ namespace TheEvolutionOfRevolution
                         actualScene = SCENE.GAMEOVER;
                     }
                     break;
+                case 3:
+                    {
+                        SceneManager.scene = new Menu();
+                        scene.LoadContent(content);
+                        actualScene = SCENE.MENU;
+                    }
+                    break;
+                case 4:
+                    {
+                        SceneManager.scene = new Instructions();
+                        scene.LoadContent(content);
+                        actualScene = SCENE.INSTRUCTIONS;
+                    }
+                    break;
+                case 5:
+                    {
+                        SceneManager.scene = new Creditos();
+                        scene.LoadContent(content);
+                        actualScene = SCENE.CREDITOS;
+                    }
+                    break;
+                case 6:
+                    {
+                        SceneManager.scene = new Congrats();
+                        scene.LoadContent(content);
+                        actualScene = SCENE.CONGRATS;
+                    }
+                    break;
+                case 7:
+                    {
+                        SceneManager.scene = new GameOver();
+                        scene.LoadContent(content);
+                        actualScene = SCENE.GAMEOVER;
+                    }
+                    break;
             }
         }
 
@@ -79,6 +114,10 @@ namespace TheEvolutionOfRevolution
             OPENING,
             LEVEL_01,
             GAMEOVER,
+            MENU,
+            INSTRUCTIONS,
+            CREDITOS,
+            CONGRATS,
         }
     }
 }

@@ -15,6 +15,7 @@ namespace TheEvolutionOfRevolution
         public ButtonBehavior btBehavior;
 
         public InfoDisplayer displayer;
+        public bool drawImg = true;
 
         public Button(Vector2 position, Point size, Texture2D bt, Texture2D btHover)
             : base(position, bt, size)
@@ -51,7 +52,8 @@ namespace TheEvolutionOfRevolution
         {
             if (btBehavior.HOVERING)
             {
-                displayer.Draw(spriteBatch);
+                if (drawImg)
+                    displayer.Draw(spriteBatch);
             }
             base.Draw(spriteBatch);
         }
