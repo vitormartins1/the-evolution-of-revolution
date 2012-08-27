@@ -30,6 +30,11 @@ namespace TheEvolutionOfRevolution
             }
         }
 
+        public static void Reset()
+        {
+            characterList.Clear();
+        }
+
         public static void Update()
         {
             BubbleSort();

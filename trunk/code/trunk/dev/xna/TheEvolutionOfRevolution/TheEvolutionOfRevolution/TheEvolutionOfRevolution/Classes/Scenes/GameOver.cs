@@ -16,16 +16,29 @@ namespace TheEvolutionOfRevolution
     {
         Background background;
 
-        public GameOver() { }
+        Button btBackMenu;
+
+        public GameOver()
+        {
+        }
 
         public override void LoadContent(ContentManager content)
         {
             base.LoadContent(content);
             this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//bg_gameover"), new Point(800, 600));
+
+            this.btBackMenu = new Button(new Vector2(800/2 - 200/2, 200), new Point(200, 50), content.Load<Texture2D>("Botoes//bt_menu"), content.Load<Texture2D>("Botoes//bthover_menu"));
+            
+            btBackMenu.drawImg = false;
         }
 
         public override void Update(GameTime gameTime)
         {
+            btBackMenu.Update();
+
+            if (btBackMenu.btBehavior.PRESSED)
+                SceneManager.changeScene(3);
+
             base.Update(gameTime);
         }
 
@@ -33,6 +46,8 @@ namespace TheEvolutionOfRevolution
         {
             if (background != null)
                 background.Draw(spritebatch);
+
+            btBackMenu.Draw(spritebatch);
 
             base.Draw(spritebatch);
         }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace TheEvolutionOfRevolution
 {
@@ -10,6 +11,7 @@ namespace TheEvolutionOfRevolution
         Color color;
         SpriteFont font;
         Vector2 displayPosition;
+        Vector2 bgPosition;
         Texture2D bg;
 
         public InfoDisplayer(SpriteFont font, Vector2 displayPosition, Color color)//, string name, float delay, float attack, float speed, float hp)
@@ -32,8 +34,17 @@ namespace TheEvolutionOfRevolution
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(bg, new Rectangle((int)displayPosition.X - 5, (int)displayPosition.Y-5, aux.Length*12/*235*/+5, 100+5), Color.White);
-            spriteBatch.DrawString(font, info, displayPosition, color);
+
+            if (Mouse.GetState().X > 800 / 2)
+            {
+                spriteBatch.Draw(bg, new Rectangle((int)displayPosition.X - aux.Length * 12/*235*/ + 20, (int)displayPosition.Y - 5, aux.Length * 12/*235*/+ 5, 100 + 5), Color.White);
+                spriteBatch.DrawString(font, info, new Vector2(displayPosition.X - aux.Length * 12/*235*/ + 25, displayPosition.Y), color);
+            }
+            else
+            {
+                spriteBatch.Draw(bg, new Rectangle((int)displayPosition.X + 20, (int)displayPosition.Y - 5, aux.Length * 12/*235*/+ 5, 100 + 5), Color.White);
+                spriteBatch.DrawString(font, info, new Vector2(displayPosition.X + 25, displayPosition.Y), color);
+            }
         }
     }
 }

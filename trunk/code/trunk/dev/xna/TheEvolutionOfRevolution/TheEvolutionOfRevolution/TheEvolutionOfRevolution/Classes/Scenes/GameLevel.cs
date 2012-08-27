@@ -66,7 +66,7 @@ namespace TheEvolutionOfRevolution
             btJeanPaulMarat = new Button(new Vector2(228+470, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_marat"),
                 content.Load<Texture2D>("Botoes//bthover_marat"));
-            btJeanPaulMarat.displayer.SetString("Marat", CharacterBalance.maratAttack, CharacterBalance.maratVelocity, CharacterBalance.maratHP);
+            btJeanPaulMarat.displayer.SetString("Jean Paul Marat", CharacterBalance.maratAttack, CharacterBalance.maratVelocity, CharacterBalance.maratHP);
 
             btRobespierre = new Button(new Vector2(278 + 470, 9), new Point(40, 40),
                 content.Load<Texture2D>("Botoes//bt_robespierre"),

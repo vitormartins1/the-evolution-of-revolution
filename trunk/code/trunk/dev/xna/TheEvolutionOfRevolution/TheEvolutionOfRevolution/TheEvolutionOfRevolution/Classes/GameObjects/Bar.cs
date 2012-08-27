@@ -18,12 +18,31 @@ namespace TheEvolutionOfRevolution
             bar.position = new Vector2(800 / 2 - bar.size.X / 2, 10);
         }
 
+        public static void Reset()
+        {
+            bar.size = new Point(250, 30);
+            barValue = new Vector2(bar.size.X / 2, bar.size.Y);
+            bar.position = new Vector2(800 / 2 - bar.size.X / 2, 10);
+        }
+
         public static void Update() 
         {
             bar.barSize = barValue;
 
-            if (bar.barSize.X <= 0) { System.Console.WriteLine("WIN"); }
-            else if (bar.barSize.X >= bar.size.X) { System.Console.WriteLine("LOSE"); }
+            if (bar.barSize.X <= 0)
+            {
+                SceneManager.changeScene(6);
+                CharacterManager.Reset();
+                Reset();
+                System.Console.WriteLine("WIN");
+            }
+            else if (bar.barSize.X >= bar.size.X)
+            {
+                SceneManager.changeScene(7);
+                CharacterManager.Reset();
+                Reset();
+                System.Console.WriteLine("LOSE");
+            }
         }
 
         public static void Draw(SpriteBatch spriteBatch)

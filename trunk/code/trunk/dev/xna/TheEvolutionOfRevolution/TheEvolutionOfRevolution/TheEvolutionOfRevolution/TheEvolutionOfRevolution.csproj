@@ -121,6 +121,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Scenes\Congrats.cs" />
+    <Compile Include="Classes\Scenes\Creditos.cs" />
     <Compile Include="Classes\GameObjects\Bar.cs" />
     <Compile Include="Classes\GameObjects\ComputerBehavior.cs" />
     <Compile Include="Classes\GameObjects\LoadingBar.cs" />
@@ -138,12 +140,14 @@
     <Compile Include="Classes\Enemies\Soldado_01.cs" />
     <Compile Include="Classes\Generic\CharacterBalance.cs" />
     <Compile Include="Classes\Generic\InfoDisplayer.cs" />
+    <Compile Include="Classes\Scenes\Instructions.cs" />
     <Compile Include="Classes\Scenes\GameLevel.cs" />
     <Compile Include="Classes\Scenes\GameOver.cs" />
     <Compile Include="Classes\GameObjects\Button.cs" />
     <Compile Include="Classes\Generic\Core.cs" />
     <Compile Include="Classes\Generic\FrameRateDisplayer.cs" />
     <Compile Include="Classes\Generic\ParticleEmitter.cs" />
+    <Compile Include="Classes\Scenes\Menu.cs" />
     <Compile Include="Classes\Scenes\Opening.cs" />
     <Compile Include="Classes\Revolutionaries\GeorgesDanton.cs" />
     <Compile Include="Classes\Revolutionaries\JeanPaulMarat.cs" />
