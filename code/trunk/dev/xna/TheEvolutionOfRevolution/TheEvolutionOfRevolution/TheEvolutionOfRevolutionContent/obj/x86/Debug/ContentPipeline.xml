@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Sprite.xnb</Output>
-      <Time>2012-08-25T10:40:09.6101615-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Sprite.xnb</Output>
+      <Time>2012-08-25T11:22:47.716-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bg_game.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_game.xnb</Output>
-      <Time>2012-08-25T14:51:15.5456965-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_game.xnb</Output>
+      <Time>2012-08-25T17:44:43.452-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bg_gameover.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_gameover.xnb</Output>
-      <Time>2012-08-25T14:51:15.5096945-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_gameover.xnb</Output>
+      <Time>2012-08-25T17:44:43.411-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bg_opening.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_opening.xnb</Output>
-      <Time>2012-08-25T14:51:15.5726981-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bg_opening.xnb</Output>
+      <Time>2012-08-25T17:44:43.512-03:00</Time>
     </Item>
     <Item>
       <Source>Images\bastilha.jpg</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bastilha.xnb</Output>
-      <Time>2012-08-25T18:46:26.0957738-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\bastilha.xnb</Output>
+      <Time>2012-08-25T18:29:14.069-03:00</Time>
     </Item>
     <Item>
       <Source>Images\russia.jpg</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\russia.xnb</Output>
-      <Time>2012-08-25T23:10:57.6032385-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\russia.xnb</Output>
+      <Time>2012-08-25T22:41:32.1662-03:00</Time>
     </Item>
     <Item>
       <Source>Images\soldier_1.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_1.xnb</Output>
-      <Time>2012-08-26T00:28:33.0135127-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_1.xnb</Output>
+      <Time>2012-08-26T00:00:41.6802-03:00</Time>
     </Item>
     <Item>
       <Source>Images\soldier_2.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_2.xnb</Output>
-      <Time>2012-08-26T00:28:33.0215132-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\soldier_2.xnb</Output>
+      <Time>2012-08-26T00:00:02.5062-03:00</Time>
     </Item>
     <Item>
       <Source>cat_1.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\cat_1.xnb</Output>
-      <Time>2012-08-25T23:47:49.3367424-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\cat_1.xnb</Output>
+      <Time>2012-08-25T23:58:25.2362-03:00</Time>
     </Item>
     <Item>
       <Source>Images\sprite_3.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_3.xnb</Output>
-      <Time>2012-08-26T00:28:33.0595153-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_3.xnb</Output>
+      <Time>2012-08-26T00:00:01.4902-03:00</Time>
     </Item>
     <Item>
       <Source>Images\sprite_4.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_4.xnb</Output>
-      <Time>2012-08-26T08:50:37.094492-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_4.xnb</Output>
+      <Time>2012-08-26T10:38:10.242-03:00</Time>
     </Item>
     <Item>
       <Source>Images\sprite_5.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_5.xnb</Output>
-      <Time>2012-08-26T00:28:33.0685159-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\sprite_5.xnb</Output>
+      <Time>2012-08-26T00:00:01.4942-03:00</Time>
     </Item>
     <Item>
       <Source>Images\stone_moon.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\stone_moon.xnb</Output>
-      <Time>2012-08-26T08:50:37.0864915-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\stone_moon.xnb</Output>
+      <Time>2012-08-26T02:12:57.548-03:00</Time>
     </Item>
     <Item>
       <Source>SpriteT.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\SpriteT.xnb</Output>
-      <Time>2012-08-26T12:47:56.2869272-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\SpriteT.xnb</Output>
+      <Time>2012-08-26T12:54:31.814-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bthover_danton.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_danton.xnb</Output>
-      <Time>2012-08-26T12:31:07.6632372-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_danton.xnb</Output>
+      <Time>2012-08-26T12:08:36.841-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bthover_luizxvi.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_luizxvi.xnb</Output>
-      <Time>2012-08-26T12:31:07.6882386-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_luizxvi.xnb</Output>
+      <Time>2012-08-26T12:08:36.843-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bthover_mantonieta.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_mantonieta.xnb</Output>
-      <Time>2012-08-26T12:31:07.7022394-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_mantonieta.xnb</Output>
+      <Time>2012-08-26T12:08:36.864-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bthover_marat.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_marat.xnb</Output>
-      <Time>2012-08-26T12:31:07.677238-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_marat.xnb</Output>
+      <Time>2012-08-26T12:08:36.865-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bthover_robespierre.png</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_robespierre.xnb</Output>
-      <Time>2012-08-26T12:31:07.7142401-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_robespierre.xnb</Output>
+      <Time>2012-08-26T12:08:36.821-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bt_danton.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_danton.xnb</Output>
-      <Time>2012-08-26T12:01:23.6351966-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_danton.xnb</Output>
+      <Time>2012-08-26T12:18:38.787-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bt_luizxvi.png</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_luizxvi.xnb</Output>
-      <Time>2012-08-26T12:01:23.5631925-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_luizxvi.xnb</Output>
+      <Time>2012-08-26T12:18:39.276-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bt_mantonieta.png</Source>
@@ -196,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_mantonieta.xnb</Output>
-      <Time>2012-08-26T12:01:23.5781934-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_mantonieta.xnb</Output>
+      <Time>2012-08-26T12:18:39.837-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bt_marat.png</Source>
@@ -205,8 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_marat.xnb</Output>
-      <Time>2012-08-26T12:01:23.6711987-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_marat.xnb</Output>
+      <Time>2012-08-26T12:18:34.732-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bt_robespierre.png</Source>
@@ -214,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_robespierre.xnb</Output>
-      <Time>2012-08-26T12:01:23.6031948-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_robespierre.xnb</Output>
+      <Time>2012-08-26T12:18:38.229-03:00</Time>
     </Item>
     <Item>
       <Source>Bar\bar1.png</Source>
@@ -223,8 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Bar\bar1.xnb</Output>
-      <Time>2012-08-26T18:58:03.7740457-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Bar\bar1.xnb</Output>
+      <Time>2012-08-26T14:53:00.753-03:00</Time>
     </Item>
     <Item>
       <Source>Bar\bar2.png</Source>
@@ -232,8 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Bar\bar2.xnb</Output>
-      <Time>2012-08-26T18:58:03.7810461-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Bar\bar2.xnb</Output>
+      <Time>2012-08-26T14:53:00.758-03:00</Time>
     </Item>
     <Item>
       <Source>Bar\bar3.png</Source>
@@ -241,8 +241,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Bar\bar3.xnb</Output>
-      <Time>2012-08-26T18:58:03.7860464-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Bar\bar3.xnb</Output>
+      <Time>2012-08-26T14:53:00.763-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bthover_soldado_01.png</Source>
@@ -250,8 +250,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_soldado_01.xnb</Output>
-      <Time>2012-08-26T18:58:03.8280488-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bthover_soldado_01.xnb</Output>
+      <Time>2012-08-26T16:49:28.071-03:00</Time>
     </Item>
     <Item>
       <Source>Botoes\bt_soldado_01.png</Source>
@@ -259,8 +259,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_soldado_01.xnb</Output>
-      <Time>2012-08-26T18:58:03.8340491-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Botoes\bt_soldado_01.xnb</Output>
+      <Time>2012-08-26T16:49:28.068-03:00</Time>
     </Item>
     <Item>
       <Source>Images\mantonieta.png</Source>
@@ -268,8 +268,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\mantonieta.xnb</Output>
-      <Time>2012-08-26T20:27:45.4863817-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Images\mantonieta.xnb</Output>
+      <Time>2012-08-26T20:25:07.397-03:00</Time>
     </Item>
     <Item>
       <Source>Bar\bg_display.png</Source>
@@ -277,8 +277,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Bar\bg_display.xnb</Output>
-      <Time>2012-08-26T22:10:14.3822053-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Bar\bg_display.xnb</Output>
+      <Time>2012-08-26T22:06:08.61-03:00</Time>
     </Item>
     <Item>
       <Source>Fonts\font_01.spritefont</Source>
@@ -286,8 +286,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Fonts\font_01.xnb</Output>
-      <Time>2012-08-26T20:27:45.5643818-03:00</Time>
+      <Output>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\Fonts\font_01.xnb</Output>
+      <Time>2012-08-26T20:25:07.417-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -295,39 +295,39 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolutionContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolutionContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\INV\Desktop\working_copies\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolutionContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolutionContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\vitor\working_copies\the-evolution-of-revolution\code\trunk\dev\xna\TheEvolutionOfRevolution\TheEvolutionOfRevolution\TheEvolutionOfRevolution\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
-        <Value>2010-08-23T11:41:18-03:00</Value>
+        <Value>2010-08-23T12:41:18-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
-        <Value>2010-08-23T11:41:18-03:00</Value>
+        <Value>2010-08-23T12:41:18-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
-        <Value>2010-08-23T11:41:18-03:00</Value>
+        <Value>2010-08-23T12:41:18-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
-        <Value>2010-08-23T11:41:18-03:00</Value>
+        <Value>2010-08-23T12:41:18-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
-        <Value>2010-08-23T11:41:18-03:00</Value>
+        <Value>2010-08-23T12:41:18-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
-        <Value>2010-08-23T11:41:18-03:00</Value>
+        <Value>2010-08-23T12:41:18-03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2011-12-23T18:55:46.8203904-02:00</Value>
+        <Value>2012-05-25T23:26:09.9211-03:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

@@ -11,7 +11,7 @@ namespace TheEvolutionOfRevolution
         private Texture2D upBar;
         public Texture2D bar;
 
-        private Vector2 position;
+        public Vector2 position;
 
         public Point size;
         public Vector2 barSize;
