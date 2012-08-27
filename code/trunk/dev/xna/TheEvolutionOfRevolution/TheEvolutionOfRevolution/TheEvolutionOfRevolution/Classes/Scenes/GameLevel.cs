@@ -26,10 +26,17 @@ namespace TheEvolutionOfRevolution
 
         LoadingBar barUser;
 
+
+        //
+        ComputerBehavior COMPUTER;
+        //
+
         public GameLevel() { }
 
         public override void LoadContent(ContentManager content)
         {
+            COMPUTER = new ComputerBehavior(content);
+
             base.LoadContent(content);
             this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//russia"), new Point(800,600));
 
@@ -69,6 +76,8 @@ namespace TheEvolutionOfRevolution
 
         public override void Update(GameTime gameTime)
         {
+            COMPUTER.Update();
+
             CheckButtons();
 
             barUser.Update();
@@ -95,43 +104,45 @@ namespace TheEvolutionOfRevolution
             btJeanPaulMarat.Draw(spritebatch);
             btRobespierre.Draw(spritebatch);
 
+            COMPUTER.Draw(spritebatch);
+
             base.Draw(spritebatch);
         }
 
         public void CheckButtons()
         {
             btMariaAntonieta.Update();
-            if (btMariaAntonieta.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
-            {
-                barUser.SetLoading(CharacterBalance.mariaDelay, 1);
-            }
-            if (barUser.loadead && barUser.ID == 1)
-            {
-                CharacterManager.AddCharacter(new MariaAntonieta(SceneManager.content.Load<Texture2D>("Images//mantonieta")));
-                barUser.ResetBar();
-            }
+            //if (btMariaAntonieta.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
+            //{
+            //    barUser.SetLoading(CharacterBalance.mariaDelay, 1);
+            //}
+            //if (barUser.loadead && barUser.ID == 1)
+            //{
+            //    CharacterManager.AddCharacter(new MariaAntonieta(SceneManager.content.Load<Texture2D>("Images//mantonieta")));
+            //    barUser.ResetBar();
+            //}
 
             btLuizXVI.Update();
-            if (btLuizXVI.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
-            {
-                barUser.SetLoading(CharacterBalance.luizDelay, 2);
-            }
-            if (barUser.loadead && barUser.ID == 2)
-            {
-                CharacterManager.AddCharacter(new LuizXVI(SceneManager.content.Load<Texture2D>("SpriteT")));
-                barUser.ResetBar();
-            }
+            //if (btLuizXVI.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
+            //{
+            //    barUser.SetLoading(CharacterBalance.luizDelay, 2);
+            //}
+            //if (barUser.loadead && barUser.ID == 2)
+            //{
+            //    CharacterManager.AddCharacter(new LuizXVI(SceneManager.content.Load<Texture2D>("SpriteT")));
+            //    barUser.ResetBar();
+            //}
 
             btSoldado_01.Update();
-            if (btSoldado_01.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
-            {
-                barUser.SetLoading(CharacterBalance.soldado_01Delay, 6);
-            }
-            if (barUser.loadead && barUser.ID == 6)
-            {
-                CharacterManager.AddCharacter(new Soldado_01(SceneManager.content.Load<Texture2D>("SpriteT")));
-                barUser.ResetBar();
-            }
+            //if (btSoldado_01.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
+            //{
+            //    barUser.SetLoading(CharacterBalance.soldado_01Delay, 6);
+            //}
+            //if (barUser.loadead && barUser.ID == 6)
+            //{
+            //    CharacterManager.AddCharacter(new Soldado_01(SceneManager.content.Load<Texture2D>("SpriteT")));
+            //    barUser.ResetBar();
+            //}
 
             btGeorgesDanton.Update();
             if (btGeorgesDanton.GetBehavior().PRESSED && !barUser.loading && barUser.ID == 0)
