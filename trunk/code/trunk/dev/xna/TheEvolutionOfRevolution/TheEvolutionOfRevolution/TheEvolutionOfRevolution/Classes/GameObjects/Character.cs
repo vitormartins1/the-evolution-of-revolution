@@ -38,8 +38,8 @@ namespace TheEvolutionOfRevolution
         {
             if (hp > 0)
             {
-                if (this.position.X < 0) { Bar.barValue--; hp = 0; }
-                else if (this.position.X > 800) { Bar.barValue++; hp = 0; }
+                if (this.position.X < 0) { Bar.barValue.X -= 10; hp = 0; }
+                else if (this.position.X > 800) { Bar.barValue.X += 10; hp = 0; }
 
                 if (attackedEnemy != null)
                 {
