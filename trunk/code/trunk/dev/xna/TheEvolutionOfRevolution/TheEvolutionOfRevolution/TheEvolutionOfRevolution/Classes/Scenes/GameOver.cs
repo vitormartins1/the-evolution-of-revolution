@@ -27,7 +27,7 @@ namespace TheEvolutionOfRevolution
             base.LoadContent(content);
             this.background = new Background(new Vector2(0, 0), content.Load<Texture2D>("Images//bg_gameover"), new Point(800, 600));
 
-            this.btBackMenu = new Button(new Vector2(800/2 - 200/2, 200), new Point(200, 50), content.Load<Texture2D>("Botoes//bt_menu"), content.Load<Texture2D>("Botoes//bthover_menu"));
+            this.btBackMenu = new Button(new Vector2(300/2 - 200/2, 500), new Point(200, 50), content.Load<Texture2D>("Botoes//bt_menu"), content.Load<Texture2D>("Botoes//bthover_menu"));
             
             btBackMenu.drawImg = false;
         }

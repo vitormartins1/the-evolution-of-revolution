@@ -24,6 +24,7 @@ namespace TheEvolutionOfRevolution
 
         static public void Setup()
         {
+            //SceneManager.scene = new Opening();
             SceneManager.scene = new Opening();
             actualScene = SCENE.OPENING;
         }
